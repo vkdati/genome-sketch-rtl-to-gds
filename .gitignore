@@ -1,0 +1,22 @@
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+
+# Local reference documents & scratch folders (not tracked in GitHub)
+*.pdf
+.licenses/
+crispr_core/
+repo_clone/
+genomics_hardware_ideas_report.md
+scl180_session_summary.md
+genome_sketching_golden_model_plan.md
+PROJECT_ONBOARDING_GUIDE.md
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/

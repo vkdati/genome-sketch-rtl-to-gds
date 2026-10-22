@@ -1,0 +1,329 @@
+{
+  "project": "SCL 180nm Streaming Genome Sketching ASIC (ntHash-32 + Banked HLL)",
+  "timestamp": "2026-10-22T04:26:37Z",
+  "runtime_seconds": 107.29,
+  "test1": {
+    "rolling_vs_direct_cycles_verified": 9980,
+    "n_gap_expected_kmers": 960,
+    "n_gap_observed_kmers": 960,
+    "status": "PASS"
+  },
+  "test2": {
+    "synth_10k_registers_matched": 256,
+    "sars_cov_2_registers_matched": 256,
+    "status": "PASS"
+  },
+  "test3_mutations": [
+    {
+      "label": "0.0% (Identical)",
+      "exact_jaccard": 1.0,
+      "hw_hll_jaccard": 1.0,
+      "exact_mash_distance": 0.0,
+      "hw_hll_mash_distance": 0.0
+    },
+    {
+      "label": "1.0% SNV Mutated",
+      "exact_jaccard": 0.67379,
+      "hw_hll_jaccard": 0.71556,
+      "exact_mash_distance": 0.01032,
+      "hw_hll_mash_distance": 0.00863
+    },
+    {
+      "label": "5.0% SNV Mutated",
+      "exact_jaccard": 0.2086,
+      "hw_hll_jaccard": 0.2182,
+      "exact_mash_distance": 0.05065,
+      "hw_hll_mash_distance": 0.04888
+    },
+    {
+      "label": "10.0% SNV Mutated",
+      "exact_jaccard": 0.05285,
+      "hw_hll_jaccard": 0.02566,
+      "exact_mash_distance": 0.10946,
+      "hw_hll_mash_distance": 0.14262
+    }
+  ],
+  "test4_real_genomes": {
+    "cardinality_benchmarks": [
+      {
+        "genome": "SARS-CoV-2 (Wuhan Ref)",
+        "file": "SARS_CoV_2_Wuhan_NC_045512.2.fasta",
+        "total_cycles": 29903,
+        "valid_kmers_streamed": 29883,
+        "exact_unique_kmers": 29871,
+        "hw_hll_estimated_kmers": 26025.9,
+        "relative_error_pct": 12.87,
+        "dff_writes_committed": 1040,
+        "dff_write_toggle_rate_pct": 3.4802,
+        "dff_clock_gate_savings_pct": 96.5198,
+        "bank_access_distribution_pct": [
+          25.3,
+          25.1,
+          24.49,
+          25.11
+        ],
+        "max_register_rank_rho": 18,
+        "min_register_rank_rho": 5
+      },
+      {
+        "genome": "SARS-CoV-2 (Omicron BA.1)",
+        "file": "SARS_CoV_2_Omicron_BA1_OL672836.1.fasta",
+        "total_cycles": 29684,
+        "valid_kmers_streamed": 29664,
+        "exact_unique_kmers": 29664,
+        "hw_hll_estimated_kmers": 26512.6,
+        "relative_error_pct": 10.62,
+        "dff_writes_committed": 1034,
+        "dff_write_toggle_rate_pct": 3.4857,
+        "dff_clock_gate_savings_pct": 96.5143,
+        "bank_access_distribution_pct": [
+          25.34,
+          25.15,
+          24.41,
+          25.1
+        ],
+        "max_register_rank_rho": 18,
+        "min_register_rank_rho": 5
+      },
+      {
+        "genome": "SARS-CoV-1 (Tor2)",
+        "file": "SARS_CoV_1_Tor2_NC_004718.3.fasta",
+        "total_cycles": 29751,
+        "valid_kmers_streamed": 29731,
+        "exact_unique_kmers": 29727,
+        "hw_hll_estimated_kmers": 35155.8,
+        "relative_error_pct": 18.26,
+        "dff_writes_committed": 1069,
+        "dff_write_toggle_rate_pct": 3.5956,
+        "dff_clock_gate_savings_pct": 96.4044,
+        "bank_access_distribution_pct": [
+          25.06,
+          24.58,
+          24.9,
+          25.45
+        ],
+        "max_register_rank_rho": 16,
+        "min_register_rank_rho": 5
+      },
+      {
+        "genome": "MERS-CoV",
+        "file": "MERS_CoV_NC_019843.3.fasta",
+        "total_cycles": 30119,
+        "valid_kmers_streamed": 30099,
+        "exact_unique_kmers": 30099,
+        "hw_hll_estimated_kmers": 30483.2,
+        "relative_error_pct": 1.28,
+        "dff_writes_committed": 1053,
+        "dff_write_toggle_rate_pct": 3.4985,
+        "dff_clock_gate_savings_pct": 96.5015,
+        "bank_access_distribution_pct": [
+          25.14,
+          25.0,
+          24.87,
+          24.98
+        ],
+        "max_register_rank_rho": 15,
+        "min_register_rank_rho": 5
+      },
+      {
+        "genome": "Zaire Ebolavirus",
+        "file": "Zaire_Ebolavirus_NC_002549.1.fasta",
+        "total_cycles": 18959,
+        "valid_kmers_streamed": 18939,
+        "exact_unique_kmers": 18939,
+        "hw_hll_estimated_kmers": 17499.2,
+        "relative_error_pct": 7.6,
+        "dff_writes_committed": 955,
+        "dff_write_toggle_rate_pct": 5.0425,
+        "dff_clock_gate_savings_pct": 94.9575,
+        "bank_access_distribution_pct": [
+          25.24,
+          24.82,
+          24.99,
+          24.95
+        ],
+        "max_register_rank_rho": 16,
+        "min_register_rank_rho": 4
+      },
+      {
+        "genome": "Phage Lambda",
+        "file": "Bacteriophage_lambda_NC_001416.1.fasta",
+        "total_cycles": 48502,
+        "valid_kmers_streamed": 48482,
+        "exact_unique_kmers": 48482,
+        "hw_hll_estimated_kmers": 50576.8,
+        "relative_error_pct": 4.32,
+        "dff_writes_committed": 1130,
+        "dff_write_toggle_rate_pct": 2.3308,
+        "dff_clock_gate_savings_pct": 97.6692,
+        "bank_access_distribution_pct": [
+          25.24,
+          25.04,
+          24.68,
+          25.05
+        ],
+        "max_register_rank_rho": 17,
+        "min_register_rank_rho": 5
+      },
+      {
+        "genome": "E. coli K-12 MG1655",
+        "file": "E_coli_K12_MG1655_NC_000913.3.fasta",
+        "total_cycles": 4641652,
+        "valid_kmers_streamed": 4641632,
+        "exact_unique_kmers": 4543891,
+        "hw_hll_estimated_kmers": 4738570.2,
+        "relative_error_pct": 4.28,
+        "dff_writes_committed": 1989,
+        "dff_write_toggle_rate_pct": 0.0429,
+        "dff_clock_gate_savings_pct": 99.9571,
+        "bank_access_distribution_pct": [
+          24.99,
+          24.99,
+          25.01,
+          25.01
+        ],
+        "max_register_rank_rho": 22,
+        "min_register_rank_rho": 12
+      },
+      {
+        "genome": "E. coli O157:H7 Sakai",
+        "file": "E_coli_O157_H7_Sakai_NC_002695.2.fasta",
+        "total_cycles": 5498578,
+        "valid_kmers_streamed": 5498558,
+        "exact_unique_kmers": 5210138,
+        "hw_hll_estimated_kmers": 5407906.7,
+        "relative_error_pct": 3.8,
+        "dff_writes_committed": 1966,
+        "dff_write_toggle_rate_pct": 0.0358,
+        "dff_clock_gate_savings_pct": 99.9642,
+        "bank_access_distribution_pct": [
+          24.97,
+          24.99,
+          25.03,
+          25.0
+        ],
+        "max_register_rank_rho": 22,
+        "min_register_rank_rho": 12
+      },
+      {
+        "genome": "S. enterica CT18",
+        "file": "Salmonella_enterica_CT18_NC_003198.1.fasta",
+        "total_cycles": 4809037,
+        "valid_kmers_streamed": 4809017,
+        "exact_unique_kmers": 4720037,
+        "hw_hll_estimated_kmers": 4800410.1,
+        "relative_error_pct": 1.7,
+        "dff_writes_committed": 2006,
+        "dff_write_toggle_rate_pct": 0.0417,
+        "dff_clock_gate_savings_pct": 99.9583,
+        "bank_access_distribution_pct": [
+          24.99,
+          25.01,
+          25.01,
+          24.99
+        ],
+        "max_register_rank_rho": 24,
+        "min_register_rank_rho": 12
+      },
+      {
+        "genome": "S. aureus NCTC8325",
+        "file": "Staphylococcus_aureus_NCTC8325_NC_007795.1.fasta",
+        "total_cycles": 2821361,
+        "valid_kmers_streamed": 2821320,
+        "exact_unique_kmers": 2769336,
+        "hw_hll_estimated_kmers": 2590564.3,
+        "relative_error_pct": 6.46,
+        "dff_writes_committed": 1899,
+        "dff_write_toggle_rate_pct": 0.0673,
+        "dff_clock_gate_savings_pct": 99.9327,
+        "bank_access_distribution_pct": [
+          25.01,
+          25.02,
+          24.98,
+          24.99
+        ],
+        "max_register_rank_rho": 21,
+        "min_register_rank_rho": 11
+      }
+    ],
+    "pairwise_benchmarks": [
+      {
+        "genome_a": "SARS-CoV-2 (Wuhan Ref)",
+        "genome_b": "SARS-CoV-2 (Omicron BA.1)",
+        "biological_context": "Same species, close variant strain",
+        "exact_jaccard": 0.92433,
+        "hw_hll_jaccard": 0.94785,
+        "exact_mash_distance": 0.00191,
+        "hw_hll_mash_distance": 0.00129,
+        "exact_ani_pct": 99.81,
+        "hw_hll_ani_pct": 99.87
+      },
+      {
+        "genome_a": "SARS-CoV-2 (Wuhan Ref)",
+        "genome_b": "SARS-CoV-1 (Tor2)",
+        "biological_context": "Related Betacoronavirus species",
+        "exact_jaccard": 0.02506,
+        "hw_hll_jaccard": 0.02028,
+        "exact_mash_distance": 0.14372,
+        "hw_hll_mash_distance": 0.15358,
+        "exact_ani_pct": 85.63,
+        "hw_hll_ani_pct": 84.64
+      },
+      {
+        "genome_a": "SARS-CoV-2 (Wuhan Ref)",
+        "genome_b": "MERS-CoV",
+        "biological_context": "Divergent coronavirus genus",
+        "exact_jaccard": 0.0,
+        "hw_hll_jaccard": 0.0,
+        "exact_mash_distance": 1.0,
+        "hw_hll_mash_distance": 1.0,
+        "exact_ani_pct": 0.0,
+        "hw_hll_ani_pct": 0.0
+      },
+      {
+        "genome_a": "SARS-CoV-2 (Wuhan Ref)",
+        "genome_b": "Zaire Ebolavirus",
+        "biological_context": "Unrelated RNA virus (negative control)",
+        "exact_jaccard": 0.0,
+        "hw_hll_jaccard": 0.00739,
+        "exact_mash_distance": 1.0,
+        "hw_hll_mash_distance": 0.20106,
+        "exact_ani_pct": 0.0,
+        "hw_hll_ani_pct": 79.89
+      },
+      {
+        "genome_a": "E. coli K-12 MG1655",
+        "genome_b": "E. coli O157:H7 Sakai",
+        "biological_context": "Same bacterial species, pathogenic vs. lab strain",
+        "exact_jaccard": 0.458,
+        "hw_hll_jaccard": 0.53099,
+        "exact_mash_distance": 0.02213,
+        "hw_hll_mash_distance": 0.01742,
+        "exact_ani_pct": 97.79,
+        "hw_hll_ani_pct": 98.26
+      },
+      {
+        "genome_a": "E. coli K-12 MG1655",
+        "genome_b": "S. enterica CT18",
+        "biological_context": "Cross-genus Enterobacteriaceae",
+        "exact_jaccard": 0.01677,
+        "hw_hll_jaccard": 0.0,
+        "exact_mash_distance": 0.16245,
+        "hw_hll_mash_distance": 1.0,
+        "exact_ani_pct": 83.75,
+        "hw_hll_ani_pct": 0.0
+      },
+      {
+        "genome_a": "E. coli K-12 MG1655",
+        "genome_b": "S. aureus NCTC8325",
+        "biological_context": "Unrelated Gram-positive bacterium",
+        "exact_jaccard": 0.00021,
+        "hw_hll_jaccard": 0.0,
+        "exact_mash_distance": 0.37077,
+        "hw_hll_mash_distance": 1.0,
+        "exact_ani_pct": 62.92,
+        "hw_hll_ani_pct": 0.0
+      }
+    ]
+  }
+}

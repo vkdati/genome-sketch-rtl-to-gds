@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-10-22T06:42:29Z",
+  "regression_suite": {
+    "stimulus_file": "stimulus_dna.hex",
+    "trace_file": "expected_trace.hex",
+    "sketch_file": "expected_sketch.hex",
+    "total_cycles": 2065,
+    "valid_kmers": 1964,
+    "dff_writes": 437,
+    "nonzero_registers": 254,
+    "estimated_cardinality": 1042.6
+  },
+  "sars_cov_2_suite": {
+    "stimulus_file": "sars_cov_2_stimulus.hex",
+    "trace_file": "sars_cov_2_expected_trace.hex",
+    "sketch_file": "sars_cov_2_expected_sketch.hex",
+    "total_cycles": 29903,
+    "valid_kmers": 29883,
+    "dff_writes": 1040,
+    "nonzero_registers": 256,
+    "estimated_cardinality": 26025.87
+  },
+  "verilog_header": "nthash32_seeds.vh"
+}
