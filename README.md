@@ -93,16 +93,24 @@ DNA Base Stream ('A'=00, 'C'=01, 'G'=10, 'T'=11)
     │   ├── verification_report.md            # Benchmark tables (cardinality, ANI%, power gating)
     │   ├── verification_results.json         # Machine-readable verification metrics
     │   └── generate_test_vectors.py          # Verilog $readmemh() .hex & .vh generator
-    └── tv/
-        ├── nthash32_seeds.vh                 # Auto-generated Verilog localparam seed tables
-        ├── stimulus_dna.hex                  # 2,065-cycle corner-case regression stimulus
-        ├── expected_trace.hex                # 2,065-cycle 128-bit internal wire trace
-        ├── expected_sketch.hex               # 256-line final HLL register dump
-        ├── sars_cov_2_stimulus.hex           # 29,903-cycle full SARS-CoV-2 genome stimulus
-        ├── sars_cov_2_expected_trace.hex     # 29,903-cycle internal wire trace
-        ├── sars_cov_2_expected_sketch.hex    # 256-line SARS-CoV-2 final HLL sketch
-        ├── tv_manifest.json                  # Test vector metadata
-        └── README_TV_FORMAT.md               # Bit-field specification for Verilog testbenches
+    ├── tv/
+    │   ├── nthash32_seeds.vh                 # Auto-generated Verilog localparam seed tables
+    │   ├── stimulus_dna.hex                  # 2,065-cycle corner-case regression stimulus
+    │   ├── expected_trace.hex                # 2,065-cycle 128-bit internal wire trace
+    │   ├── expected_sketch.hex               # 256-line final HLL register dump
+    │   ├── sars_cov_2_stimulus.hex           # 29,903-cycle full SARS-CoV-2 genome stimulus
+    │   ├── sars_cov_2_expected_trace.hex     # 29,903-cycle internal wire trace
+    │   ├── sars_cov_2_expected_sketch.hex    # 256-line SARS-CoV-2 final HLL sketch
+    │   ├── tv_manifest.json                  # Test vector metadata
+    │   └── README_TV_FORMAT.md               # Bit-field specification for Verilog testbenches
+    ├── rtl/
+    │   ├── nthash32_engine.v                 # Stage 1 & 2: 21-bp window + rolling ntHash-32
+    │   ├── lzd24.v                           # Stage 3: Address decoder + 24-bit LZD
+    │   ├── hll_banked_mem.v                  # Stage 4: 4x64x5-bit banked HLL DFF array
+    │   └── genome_sketch_top.v               # Synthesizable 22-pin ASIC top-level module
+    ├── tb/
+    │   └── tb_genome_sketch.v                # Self-checking cycle-accurate Verilog testbench
+    └── run_rtl_sim.py                        # One-command Icarus Verilog compile & sim runner
 ```
 
 ---
@@ -123,6 +131,9 @@ python golden_model/verify_biology.py
 
 # 4. Regenerate Verilog .hex test vectors and nthash32_seeds.vh
 python golden_model/generate_test_vectors.py
+
+# 5. Compile & run the cycle-accurate Verilog RTL simulation (31,968 cycles)
+python run_rtl_sim.py
 ```
 
 ---

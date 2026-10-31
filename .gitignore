@@ -16,7 +16,10 @@ scl180_session_summary.md
 genome_sketching_golden_model_plan.md
 PROJECT_ONBOARDING_GUIDE.md
 
-# OS / Editor files
+# OS / Editor / Simulation build artifacts
 .DS_Store
 Thumbs.db
 .vscode/
+*.vvp
+*.vcd
+
