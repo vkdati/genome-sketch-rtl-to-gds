@@ -1,0 +1,361 @@
+OpenROAD f12e2f474102bfb875eeee57fb610d7d7de17770 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /home/nithin/.volare/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/techlef/gf180mcu_fd_sc_mcu9t5v0__nom.tlef
+[INFO ODB-0223]     Created 15 technology layers
+[INFO ODB-0224]     Created 56 technology vias
+[INFO ODB-0226] Finished LEF file:  /home/nithin/.volare/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/techlef/gf180mcu_fd_sc_mcu9t5v0__nom.tlef
+[INFO ODB-0222] Reading LEF file: /home/nithin/.volare/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lef/gf180mcu_fd_sc_mcu9t5v0.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/nithin/.volare/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lef/gf180mcu_fd_sc_mcu9t5v0.lef at line 2.
+
+[INFO ODB-0225]     Created 229 library cells
+[INFO ODB-0226] Finished LEF file:  /home/nithin/.volare/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lef/gf180mcu_fd_sc_mcu9t5v0.lef
+=== CHECK_SETUP ===
+[WARNING IFP-0028] Core area lower left (20.000, 20.000) snapped to (20.160, 20.160).
+[INFO IFP-0001] Added 147 rows of 1324 sites.
+Error: tracks.info, 1 invalid command name "Metal1"
+Found 0 macro blocks.
+Using 1u default distance from corners.
+Using 2 tracks default min distance between IO pins.
+[ERROR PPL-0021] Horizontal routing tracks not found for layer Metal3.
+PPL-0021
+[INFO GPL-0002] DBU: 2000
+[INFO GPL-0003] SiteSize: 1120 10080
+[INFO GPL-0004] CoreAreaLxLy: 40320 40320
+[INFO GPL-0005] CoreAreaUxUy: 1523200 1522080
+[WARNING GPL-0001] base_in[0] toplevel port is not placed!
+       Replace will regard base_in[0] is placed in (0, 0)
+[WARNING GPL-0001] base_in[1] toplevel port is not placed!
+       Replace will regard base_in[1] is placed in (0, 0)
+[WARNING GPL-0001] clear_sketch toplevel port is not placed!
+       Replace will regard clear_sketch is placed in (0, 0)
+[WARNING GPL-0001] clear_window toplevel port is not placed!
+       Replace will regard clear_window is placed in (0, 0)
+[WARNING GPL-0001] clk toplevel port is not placed!
+       Replace will regard clk is placed in (0, 0)
+[WARNING GPL-0001] kmer_valid toplevel port is not placed!
+       Replace will regard kmer_valid is placed in (0, 0)
+[WARNING GPL-0001] read_addr[0] toplevel port is not placed!
+       Replace will regard read_addr[0] is placed in (0, 0)
+[WARNING GPL-0001] read_addr[1] toplevel port is not placed!
+       Replace will regard read_addr[1] is placed in (0, 0)
+[WARNING GPL-0001] read_addr[2] toplevel port is not placed!
+       Replace will regard read_addr[2] is placed in (0, 0)
+[WARNING GPL-0001] read_addr[3] toplevel port is not placed!
+       Replace will regard read_addr[3] is placed in (0, 0)
+[WARNING GPL-0001] read_addr[4] toplevel port is not placed!
+       Replace will regard read_addr[4] is placed in (0, 0)
+[WARNING GPL-0001] read_addr[5] toplevel port is not placed!
+       Replace will regard read_addr[5] is placed in (0, 0)
+[WARNING GPL-0001] read_addr[6] toplevel port is not placed!
+       Replace will regard read_addr[6] is placed in (0, 0)
+[WARNING GPL-0001] read_addr[7] toplevel port is not placed!
+       Replace will regard read_addr[7] is placed in (0, 0)
+[WARNING GPL-0001] read_data[0] toplevel port is not placed!
+       Replace will regard read_data[0] is placed in (0, 0)
+[WARNING GPL-0001] read_data[1] toplevel port is not placed!
+       Replace will regard read_data[1] is placed in (0, 0)
+[WARNING GPL-0001] read_data[2] toplevel port is not placed!
+       Replace will regard read_data[2] is placed in (0, 0)
+[WARNING GPL-0001] read_data[3] toplevel port is not placed!
+       Replace will regard read_data[3] is placed in (0, 0)
+[WARNING GPL-0001] read_data[4] toplevel port is not placed!
+       Replace will regard read_data[4] is placed in (0, 0)
+[WARNING GPL-0001] rst_n toplevel port is not placed!
+       Replace will regard rst_n is placed in (0, 0)
+[WARNING GPL-0001] valid_in toplevel port is not placed!
+       Replace will regard valid_in is placed in (0, 0)
+[WARNING GPL-0001] write_en toplevel port is not placed!
+       Replace will regard write_en is placed in (0, 0)
+[INFO GPL-0006] NumInstances: 5610
+[INFO GPL-0007] NumPlaceInstances: 5610
+[INFO GPL-0008] NumFixedInstances: 0
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 5625
+[INFO GPL-0011] NumPins: 24074
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 1563740 1563740
+[INFO GPL-0014] CoreAreaLxLy: 40320 40320
+[INFO GPL-0015] CoreAreaUxUy: 1523200 1522080
+[INFO GPL-0016] CoreArea: 2197272268800
+[INFO GPL-0017] NonPlaceInstsArea: 0
+[INFO GPL-0018] PlaceInstsArea: 990662400000
+[INFO GPL-0019] Util(%): 45.09
+[INFO GPL-0020] StdInstsArea: 990662400000
+[INFO GPL-0021] MacroInstsArea: 0
+[InitialPlace]  Iter: 1 CG residual: 0.00827873 HPWL: 190582560
+[InitialPlace]  Iter: 2 CG residual: 0.00739756 HPWL: 198907676
+[InitialPlace]  Iter: 3 CG residual: 0.01506903 HPWL: 199581626
+[InitialPlace]  Iter: 4 CG residual: 0.00892874 HPWL: 200329688
+[InitialPlace]  Iter: 5 CG residual: 0.02747816 HPWL: 200381373
+[InitialPlace]  Iter: 6 CG residual: 0.00708427 HPWL: 200695218
+[InitialPlace]  Iter: 7 CG residual: 0.01766707 HPWL: 200289150
+[InitialPlace]  Iter: 8 CG residual: 0.00591069 HPWL: 200000293
+[InitialPlace]  Iter: 9 CG residual: 0.00137877 HPWL: 199615433
+[InitialPlace]  Iter: 10 CG residual: 0.00197162 HPWL: 199574884
+[InitialPlace]  Iter: 11 CG residual: 0.00194477 HPWL: 199442689
+[InitialPlace]  Iter: 12 CG residual: 0.00122726 HPWL: 199482777
+[InitialPlace]  Iter: 13 CG residual: 0.00077977 HPWL: 199449203
+[InitialPlace]  Iter: 14 CG residual: 0.00031598 HPWL: 199446086
+[InitialPlace]  Iter: 15 CG residual: 0.00012921 HPWL: 199347994
+[InitialPlace]  Iter: 16 CG residual: 0.00011692 HPWL: 199382367
+[InitialPlace]  Iter: 17 CG residual: 0.00003734 HPWL: 199363610
+[InitialPlace]  Iter: 18 CG residual: 0.00011898 HPWL: 199388908
+[InitialPlace]  Iter: 19 CG residual: 0.00003696 HPWL: 199349239
+[InitialPlace]  Iter: 20 CG residual: 0.00006056 HPWL: 199385773
+[INFO GPL-0031] FillerInit: NumGCells: 6233
+[INFO GPL-0032] FillerInit: NumGNets: 5625
+[INFO GPL-0033] FillerInit: NumGPins: 24074
+[INFO GPL-0023] TargetDensity: 0.50
+[INFO GPL-0024] AveragePlaceInstArea: 176588663
+[INFO GPL-0025] IdealBinArea: 353177312
+[INFO GPL-0026] IdealBinCnt: 6221
+[INFO GPL-0027] TotalBinArea: 2197272268800
+[INFO GPL-0028] BinCnt: 64 64
+[INFO GPL-0029] BinSize: 23170 23153
+[INFO GPL-0030] NumBins: 4096
+[NesterovSolve] Iter: 1 overflow: 0.998858 HPWL: 42974214
+[NesterovSolve] Iter: 10 overflow: 0.998319 HPWL: 36973509
+[NesterovSolve] Iter: 20 overflow: 0.998316 HPWL: 36479298
+[NesterovSolve] Iter: 30 overflow: 0.998316 HPWL: 36491822
+[NesterovSolve] Iter: 40 overflow: 0.998316 HPWL: 36505664
+[NesterovSolve] Iter: 50 overflow: 0.998316 HPWL: 36512363
+[NesterovSolve] Iter: 60 overflow: 0.998316 HPWL: 36512524
+[NesterovSolve] Iter: 70 overflow: 0.998316 HPWL: 36493825
+[NesterovSolve] Iter: 80 overflow: 0.998316 HPWL: 36482213
+[NesterovSolve] Iter: 90 overflow: 0.998316 HPWL: 36491118
+[NesterovSolve] Iter: 100 overflow: 0.998316 HPWL: 36524976
+[NesterovSolve] Iter: 110 overflow: 0.998316 HPWL: 36595319
+[NesterovSolve] Iter: 120 overflow: 0.998316 HPWL: 36744454
+[NesterovSolve] Iter: 130 overflow: 0.998316 HPWL: 37045190
+[NesterovSolve] Iter: 140 overflow: 0.998316 HPWL: 37582175
+[NesterovSolve] Iter: 150 overflow: 0.997491 HPWL: 38511070
+[NesterovSolve] Iter: 160 overflow: 0.997312 HPWL: 39971259
+[NesterovSolve] Iter: 170 overflow: 0.99692 HPWL: 42177115
+[NesterovSolve] Iter: 180 overflow: 0.995618 HPWL: 45721796
+[NesterovSolve] Iter: 190 overflow: 0.994509 HPWL: 50623226
+[NesterovSolve] Iter: 200 overflow: 0.992611 HPWL: 57303085
+[NesterovSolve] Iter: 210 overflow: 0.990049 HPWL: 69041211
+[NesterovSolve] Iter: 220 overflow: 0.985004 HPWL: 95033442
+[NesterovSolve] Iter: 230 overflow: 0.978584 HPWL: 123455858
+[NesterovSolve] Iter: 240 overflow: 0.973564 HPWL: 143356373
+[NesterovSolve] Iter: 250 overflow: 0.96637 HPWL: 170037396
+[NesterovSolve] Iter: 260 overflow: 0.952648 HPWL: 208714094
+[NesterovSolve] Iter: 270 overflow: 0.937786 HPWL: 248596661
+[NesterovSolve] Iter: 280 overflow: 0.920599 HPWL: 289198099
+[NesterovSolve] Iter: 290 overflow: 0.894235 HPWL: 331320424
+[NesterovSolve] Iter: 300 overflow: 0.866263 HPWL: 366280204
+[NesterovSolve] Iter: 310 overflow: 0.83134 HPWL: 407640503
+[NesterovSolve] Iter: 320 overflow: 0.79366 HPWL: 451625893
+[NesterovSolve] Iter: 330 overflow: 0.752523 HPWL: 483535589
+[NesterovSolve] Iter: 340 overflow: 0.707566 HPWL: 519974188
+[NesterovSolve] Iter: 350 overflow: 0.660481 HPWL: 566424564
+[NesterovSolve] Iter: 360 overflow: 0.610795 HPWL: 602613966
+[NesterovSolve] Iter: 370 overflow: 0.559683 HPWL: 636499952
+[NesterovSolve] Iter: 380 overflow: 0.51775 HPWL: 668338358
+[NesterovSolve] Iter: 390 overflow: 0.474248 HPWL: 691487710
+[NesterovSolve] Iter: 400 overflow: 0.422891 HPWL: 699546416
+[NesterovSolve] Iter: 410 overflow: 0.375847 HPWL: 708489057
+[NesterovSolve] Iter: 420 overflow: 0.325669 HPWL: 711237313
+[NesterovSolve] Iter: 430 overflow: 0.284272 HPWL: 713137520
+[NesterovSolve] Iter: 440 overflow: 0.245881 HPWL: 713519615
+[NesterovSolve] Iter: 450 overflow: 0.212532 HPWL: 714566207
+[NesterovSolve] Iter: 460 overflow: 0.186055 HPWL: 715913622
+[NesterovSolve] Iter: 470 overflow: 0.154396 HPWL: 716784602
+[NesterovSolve] Iter: 480 overflow: 0.133012 HPWL: 717995019
+[NesterovSolve] Iter: 490 overflow: 0.112864 HPWL: 719333090
+[NesterovSolve] Finished with Overflow: 0.099818
+[WARNING RSZ-0021] no estimated parasitics. Using wire load models.
+[INFO RSZ-0058] Using max wire length 6569um.
+[INFO RSZ-0034] Found 542 slew violations.
+[INFO RSZ-0035] Found 163 fanout violations.
+[INFO RSZ-0036] Found 32 capacitance violations.
+[INFO RSZ-0038] Inserted 723 buffers in 681 nets.
+[INFO RSZ-0039] Resized 905 instances.
+[WARNING RSZ-0021] no estimated parasitics. Using wire load models.
+[INFO RSZ-0040] Inserted 104 buffers.
+[INFO RSZ-0041] Resized 472 instances.
+[WARNING RSZ-0062] Unable to repair all setup violations.
+=== WNS_AND_TNS ===
+wns -6.90
+tns -8527.75
+=== CRITICAL_SETUP_PATH ===
+Startpoint: _8437_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _9603_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout      Cap     Slew    Delay     Time   Description
+---------------------------------------------------------------------------------
+                   0.150    0.000    0.000   clock clk (rise edge)
+                            0.000    0.000   clock network delay (ideal)
+                   0.150    0.000    0.000 ^ _8437_/CLK (gf180mcu_fd_sc_mcu9t5v0__dffrnq_2)
+                   0.272    0.800    0.800 ^ _8437_/Q (gf180mcu_fd_sc_mcu9t5v0__dffrnq_2)
+     5    0.038                              u_nthash32.h_fwd[17] (net)
+                   0.272    0.000    0.800 ^ _4310_/A1 (gf180mcu_fd_sc_mcu9t5v0__xnor2_1)
+                   0.366    0.356    1.156 ^ _4310_/ZN (gf180mcu_fd_sc_mcu9t5v0__xnor2_1)
+     2    0.012                              _1495_ (net)
+                   0.366    0.000    1.156 ^ _4340_/A3 (gf180mcu_fd_sc_mcu9t5v0__nand3_1)
+                   0.231    0.146    1.302 v _4340_/ZN (gf180mcu_fd_sc_mcu9t5v0__nand3_1)
+     1    0.007                              _1525_ (net)
+                   0.231    0.000    1.302 v _4341_/B2 (gf180mcu_fd_sc_mcu9t5v0__aoi22_1)
+                   0.379    0.316    1.618 ^ _4341_/ZN (gf180mcu_fd_sc_mcu9t5v0__aoi22_1)
+     1    0.007                              _1526_ (net)
+                   0.379    0.000    1.618 ^ _4342_/B2 (gf180mcu_fd_sc_mcu9t5v0__oai22_1)
+                   0.249    0.192    1.809 v _4342_/ZN (gf180mcu_fd_sc_mcu9t5v0__oai22_1)
+     1    0.007                              _1527_ (net)
+                   0.249    0.000    1.809 v _4343_/A2 (gf180mcu_fd_sc_mcu9t5v0__aoi21_1)
+                   0.323    0.249    2.058 ^ _4343_/ZN (gf180mcu_fd_sc_mcu9t5v0__aoi21_1)
+     1    0.007                              _1528_ (net)
+                   0.323    0.000    2.058 ^ _4345_/B1 (gf180mcu_fd_sc_mcu9t5v0__oai22_1)
+                   0.223    0.167    2.225 v _4345_/ZN (gf180mcu_fd_sc_mcu9t5v0__oai22_1)
+     1    0.007                              _1530_ (net)
+                   0.223    0.000    2.225 v _4346_/B2 (gf180mcu_fd_sc_mcu9t5v0__aoi22_1)
+                   0.381    0.315    2.540 ^ _4346_/ZN (gf180mcu_fd_sc_mcu9t5v0__aoi22_1)
+     1    0.007                              _1531_ (net)
+                   0.381    0.000    2.540 ^ _4361_/A2 (gf180mcu_fd_sc_mcu9t5v0__oai31_1)
+                   0.290    0.209    2.749 v _4361_/ZN (gf180mcu_fd_sc_mcu9t5v0__oai31_1)
+     1    0.013                              _1546_ (net)
+                   0.290    0.000    2.749 v _4372_/B1 (gf180mcu_fd_sc_mcu9t5v0__aoi22_2)
+                   0.476    0.342    3.091 ^ _4372_/ZN (gf180mcu_fd_sc_mcu9t5v0__aoi22_2)
+     2    0.022                              _1557_ (net)
+                   0.476    0.000    3.091 ^ repeater565/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_4)
+                   0.235    0.337    3.428 ^ repeater565/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_4)
+     7    0.072                              net565 (net)
+                   0.235    0.000    3.428 ^ repeater562/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_8)
+                   0.128    0.236    3.664 ^ repeater562/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_8)
+     6    0.062                              net562 (net)
+                   0.128    0.000    3.664 ^ _4389_/S (gf180mcu_fd_sc_mcu9t5v0__mux2_2)
+                   0.157    0.395    4.059 v _4389_/Z (gf180mcu_fd_sc_mcu9t5v0__mux2_2)
+     4    0.018                              _1574_ (net)
+                   0.157    0.000    4.059 v _4430_/A1 (gf180mcu_fd_sc_mcu9t5v0__xor2_2)
+                   0.232    0.535    4.595 ^ _4430_/Z (gf180mcu_fd_sc_mcu9t5v0__xor2_2)
+     5    0.034                              _1615_ (net)
+                   0.232    0.000    4.595 ^ _4526_/A3 (gf180mcu_fd_sc_mcu9t5v0__nor3_2)
+                   0.270    0.156    4.750 v _4526_/ZN (gf180mcu_fd_sc_mcu9t5v0__nor3_2)
+     1    0.011                              _1711_ (net)
+                   0.270    0.000    4.750 v repeater537/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_4)
+                   0.170    0.285    5.035 v repeater537/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_4)
+     6    0.051                              net537 (net)
+                   0.170    0.000    5.035 v repeater536/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_8)
+                   0.158    0.254    5.289 v repeater536/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_8)
+     6    0.093                              net536 (net)
+                   0.158    0.000    5.289 v repeater535/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_16)
+                   0.123    0.226    5.515 v repeater535/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_16)
+     7    0.127                              net535 (net)
+                   0.123    0.000    5.515 v repeater534/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_20)
+                   0.097    0.198    5.713 v repeater534/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_20)
+     8    0.103                              net534 (net)
+                   0.097    0.000    5.713 v _4591_/A1 (gf180mcu_fd_sc_mcu9t5v0__and3_4)
+                   0.137    0.255    5.968 v _4591_/Z (gf180mcu_fd_sc_mcu9t5v0__and3_4)
+     4    0.040                              _1776_ (net)
+                   0.137    0.000    5.968 v repeater471/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_8)
+                   0.105    0.207    6.174 v repeater471/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_8)
+     6    0.048                              net471 (net)
+                   0.105    0.000    6.174 v _5043_/C1 (gf180mcu_fd_sc_mcu9t5v0__aoi222_2)
+                   0.655    0.467    6.641 ^ _5043_/ZN (gf180mcu_fd_sc_mcu9t5v0__aoi222_2)
+     1    0.006                              _2228_ (net)
+                   0.655    0.000    6.641 ^ _5044_/A3 (gf180mcu_fd_sc_mcu9t5v0__nand3_1)
+                   0.237    0.126    6.768 v _5044_/ZN (gf180mcu_fd_sc_mcu9t5v0__nand3_1)
+     1    0.005                              _2229_ (net)
+                   0.237    0.000    6.768 v _5050_/A3 (gf180mcu_fd_sc_mcu9t5v0__nor4_1)
+                   0.539    0.399    7.166 ^ _5050_/ZN (gf180mcu_fd_sc_mcu9t5v0__nor4_1)
+     1    0.007                              _2235_ (net)
+                   0.539    0.000    7.166 ^ _5069_/B1 (gf180mcu_fd_sc_mcu9t5v0__aoi221_1)
+                   0.358    0.249    7.415 v _5069_/ZN (gf180mcu_fd_sc_mcu9t5v0__aoi221_1)
+     1    0.006                              _2254_ (net)
+                   0.358    0.000    7.415 v _5070_/A4 (gf180mcu_fd_sc_mcu9t5v0__or4_2)
+                   0.234    0.645    8.060 v _5070_/Z (gf180mcu_fd_sc_mcu9t5v0__or4_2)
+     2    0.021                              _2255_ (net)
+                   0.234    0.000    8.060 v _5420_/A2 (gf180mcu_fd_sc_mcu9t5v0__oai22_1)
+                   0.458    0.218    8.278 ^ _5420_/ZN (gf180mcu_fd_sc_mcu9t5v0__oai22_1)
+     1    0.006                              _2605_ (net)
+                   0.458    0.000    8.278 ^ _5421_/B (gf180mcu_fd_sc_mcu9t5v0__aoi21_1)
+                   0.261    0.190    8.468 v _5421_/ZN (gf180mcu_fd_sc_mcu9t5v0__aoi21_1)
+     1    0.006                              _2606_ (net)
+                   0.261    0.000    8.468 v _5599_/B (gf180mcu_fd_sc_mcu9t5v0__aoi211_1)
+                   0.710    0.493    8.962 ^ _5599_/ZN (gf180mcu_fd_sc_mcu9t5v0__aoi211_1)
+     1    0.014                              _2784_ (net)
+                   0.710    0.000    8.962 ^ _5602_/A1 (gf180mcu_fd_sc_mcu9t5v0__oai21_2)
+                   0.341    0.222    9.184 v _5602_/ZN (gf180mcu_fd_sc_mcu9t5v0__oai21_2)
+     6    0.035                              _2787_ (net)
+                   0.341    0.000    9.184 v repeater277/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_4)
+                   0.146    0.284    9.468 v repeater277/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_4)
+     2    0.041                              net277 (net)
+                   0.146    0.000    9.468 v repeater276/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_12)
+                   0.161    0.251    9.719 v repeater276/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_12)
+     7    0.144                              net276 (net)
+                   0.161    0.000    9.719 v repeater265/I (gf180mcu_fd_sc_mcu9t5v0__buf_8)
+                   0.135    0.248    9.967 v repeater265/Z (gf180mcu_fd_sc_mcu9t5v0__buf_8)
+    11    0.115                              net265 (net)
+                   0.135    0.000    9.967 v repeater263/I (gf180mcu_fd_sc_mcu9t5v0__buf_12)
+                   0.126    0.234   10.201 v repeater263/Z (gf180mcu_fd_sc_mcu9t5v0__buf_12)
+    11    0.153                              net263 (net)
+                   0.126    0.000   10.201 v repeater262/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_20)
+                   0.140    0.231   10.432 v repeater262/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_20)
+    11    0.194                              net262 (net)
+                   0.140    0.000   10.432 v _8167_/A3 (gf180mcu_fd_sc_mcu9t5v0__oai31_2)
+                   0.465    0.338   10.770 ^ _8167_/ZN (gf180mcu_fd_sc_mcu9t5v0__oai31_2)
+     2    0.014                              _4164_ (net)
+                   0.465    0.000   10.770 ^ repeater37/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_2)
+                   0.222    0.341   11.111 ^ repeater37/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_2)
+     4    0.033                              net37 (net)
+                   0.222    0.000   11.111 ^ _8170_/S (gf180mcu_fd_sc_mcu9t5v0__mux2_1)
+                   0.140    0.418   11.529 v _8170_/Z (gf180mcu_fd_sc_mcu9t5v0__mux2_1)
+     1    0.004                              _1184_ (net)
+                   0.140    0.000   11.529 v _9603_/D (gf180mcu_fd_sc_mcu9t5v0__dffrnq_1)
+                                    11.529   data arrival time
+
+                   0.150    5.000    5.000   clock clk (rise edge)
+                            0.000    5.000   clock network delay (ideal)
+                           -0.200    4.800   clock uncertainty
+                            0.000    4.800   clock reconvergence pessimism
+                                     4.800 ^ _9603_/CLK (gf180mcu_fd_sc_mcu9t5v0__dffrnq_1)
+                           -0.175    4.625   library setup time
+                                     4.625   data required time
+---------------------------------------------------------------------------------
+                                     4.625   data required time
+                                   -11.529   data arrival time
+---------------------------------------------------------------------------------
+                                    -6.904   slack (VIOLATED)
+
+
+=== CRITICAL_HOLD_PATH ===
+Startpoint: base_in[0] (input port clocked by clk)
+Endpoint: _8457_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout      Cap     Slew    Delay     Time   Description
+---------------------------------------------------------------------------------
+                   0.150    0.000    0.000   clock clk (rise edge)
+                            0.000    0.000   clock network delay (ideal)
+                            0.250    0.250 v input external delay
+                   0.150    0.000    0.250 v base_in[0] (in)
+    18    0.167                              base_in[0] (net)
+                   0.150    0.000    0.250 v _6644_/A1 (gf180mcu_fd_sc_mcu9t5v0__aoi22_1)
+                   0.174    0.145    0.395 ^ _6644_/ZN (gf180mcu_fd_sc_mcu9t5v0__aoi22_1)
+     1    0.006                              _3785_ (net)
+                   0.174    0.000    0.395 ^ _6645_/I (gf180mcu_fd_sc_mcu9t5v0__clkinv_1)
+                   0.102    0.095    0.490 v _6645_/ZN (gf180mcu_fd_sc_mcu9t5v0__clkinv_1)
+     1    0.004                              _0038_ (net)
+                   0.102    0.000    0.490 v _8457_/D (gf180mcu_fd_sc_mcu9t5v0__dffrnq_1)
+                                     0.490   data arrival time
+
+                   0.150    0.000    0.000   clock clk (rise edge)
+                            0.000    0.000   clock network delay (ideal)
+                            0.100    0.100   clock uncertainty
+                            0.000    0.100   clock reconvergence pessimism
+                                     0.100 ^ _8457_/CLK (gf180mcu_fd_sc_mcu9t5v0__dffrnq_1)
+                            0.068    0.168   library hold time
+                                     0.168   data required time
+---------------------------------------------------------------------------------
+                                     0.168   data required time
+                                    -0.490   data arrival time
+---------------------------------------------------------------------------------
+                                     0.322   slack (MET)
+
+
+=== DESIGN_AREA ===
+Design area 287080 u^2 52% utilization.

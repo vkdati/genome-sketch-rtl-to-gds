@@ -1,0 +1,35 @@
+=============================================================================
+STEP 6.2: FINAL GDSII STREAM-OUT & PHYSICAL AUDIT REPORT
+=============================================================================
+GDSII File Path          : /media/nithin/Local Disk/BTP/genome_sketch_asic/asic/gds/genome_sketch_top.gds
+GDSII File Size          : 9,644,336 bytes (9.20 MB)
+Top Cell Name            : genome_sketch_top
+Bounding Box (um)        : (0.00, 0.00) to (781.76, 781.76)
+Die Dimensions (um)      : 781.76 um x 781.76 um (0.6111 mm^2)
+Total Cell Definitions   : 121
+Top-Level Cell Refs      : 79,767
+Total Hierarchical Polys : 969,550
+Metal5 (81/0) Polygons   : 0 (PASS: Strict 4-Metal Compliance)
+-----------------------------------------------------------------------------
+GDS Layer/DT   | Layer Description                  |   Top-Level |     Full Chip
+-----------------------------------------------------------------------------
+0/0            | PR_bndry / DIEAREA                 |           1 |        37,063
+21/0           | Nwell (21/0)                       |           0 |        18,531
+22/0           | COMP / Active Diffusion (22/0)     |           0 |        41,302
+30/0           | Poly2 Gate (30/0)                  |           0 |        59,489
+31/0           | Nplus Implant (31/0)               |           0 |        20,952
+32/0           | Pplus Implant (32/0)               |           0 |        18,531
+33/0           | Contact (33/0)                     |           0 |       357,341
+34/0           | Metal1 Drawing (34/0)              |           5 |       129,422
+35/0           | Via1 (35/0)                        |           0 |        30,264
+36/0           | Metal2 Drawing (36/0)              |       7,809 |       106,754
+36/10          | Metal2 Pin/Label (36/10)           |           2 |             2
+38/0           | Via2 (38/0)                        |           0 |        32,252
+40/0           | Via3 (40/0)                        |           0 |         5,200
+42/0           | Metal3 Drawing (42/0)              |       1,883 |        53,892
+42/10          | Metal3 Pin/Label (42/10)           |          20 |            20
+46/0           | Metal4 Drawing (46/0)              |          18 |         2,942
+55/0           | Layer 55/0                         |           0 |        18,531
+112/1          | Layer 112/1                        |           0 |        18,531
+204/0          | DNWell / Substrate (204/0)         |           0 |        18,531
+=============================================================================

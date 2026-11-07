@@ -1,0 +1,19 @@
+{
+  "post_cts_design_area_um2": 403558,
+  "post_cts_utilization_pct": 75,
+  "cts_dff_sinks": 1392,
+  "cts_clock_buffers": 172,
+  "cts_clock_skew_ns": 0.59,
+  "cts_clock_skew_ps": 590.0,
+  "total_routed_wirelength_um": 646966.0,
+  "total_routed_wirelength_mm": 646.966,
+  "total_vias": 58480,
+  "routing_drc_violations": 0,
+  "routed_segments_by_layer": {
+    "Metal1": 29252,
+    "Metal2": 78240,
+    "Metal3": 23372,
+    "Metal4": 718,
+    "Metal5": 0
+  }
+}

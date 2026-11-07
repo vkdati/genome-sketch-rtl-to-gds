@@ -1,0 +1,5 @@
+  [GL SUITE 1] Pin Trace: 2065/2065 | HLL Regs: 256/256 (Errors: 0)
+VCD info: dumpfile asic/reports/sars_cov_2_gl.vcd opened for output.
+  [GL SUITE 2] Pin Trace: 29903/29903 | HLL Regs: 256/256 (Errors: 0)
+[PASS] GATE-LEVEL NETLIST SIMULATION PASSED (31,968 / 31,968 cycles & 512 / 512 HLL regs 100% bit-identical!)
+/media/nithin/Local Disk/BTP/genome_sketch_asic/tb/tb_genome_sketch_gl.v:209: $finish called at 160379500 (1ps)

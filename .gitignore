@@ -22,4 +22,5 @@ Thumbs.db
 .vscode/
 *.vvp
 *.vcd
+.antigravity_ubuntu_brain/
 

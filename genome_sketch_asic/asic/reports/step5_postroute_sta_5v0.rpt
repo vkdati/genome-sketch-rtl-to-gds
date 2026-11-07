@@ -1,0 +1,347 @@
+OpenROAD f12e2f474102bfb875eeee57fb610d7d7de17770 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /home/nithin/.volare/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/techlef/gf180mcu_fd_sc_mcu9t5v0__nom.tlef
+[INFO ODB-0223]     Created 15 technology layers
+[INFO ODB-0224]     Created 56 technology vias
+[INFO ODB-0226] Finished LEF file:  /home/nithin/.volare/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/techlef/gf180mcu_fd_sc_mcu9t5v0__nom.tlef
+[INFO ODB-0222] Reading LEF file: /home/nithin/.volare/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lef/gf180mcu_fd_sc_mcu9t5v0.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/nithin/.volare/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lef/gf180mcu_fd_sc_mcu9t5v0.lef at line 2.
+
+[INFO ODB-0225]     Created 229 library cells
+[INFO ODB-0226] Finished LEF file:  /home/nithin/.volare/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lef/gf180mcu_fd_sc_mcu9t5v0.lef
+[INFO RCX-0008] extracting parasitics of genome_sketch_top ...
+[INFO RCX-0435] Reading extraction model file /home/nithin/.volare/gf180mcuD/libs.tech/openlane/rules.openrcx.gf180mcuD.nom ...
+[INFO RCX-0434] Defined process_corner MinMax0 with ext_model_index 0 (using extRulesFile defaults)
+[INFO RCX-0436] RC segment generation genome_sketch_top (max_merge_res 50.0) ...
+[WARNING RCX-0114] Net 6478 net5779 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6480 net5781 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6481 net5782 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6486 net5787 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6491 net5792 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6492 net5793 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6494 net5795 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6495 net5796 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6497 net5798 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6499 net5800 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6500 net5801 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6502 net5803 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6503 net5804 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6504 net5805 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6505 net5806 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6506 net5807 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6507 net5808 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6508 net5809 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6511 net5812 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6514 net5815 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6517 net5818 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6523 net5824 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6524 net5825 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6525 net5826 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6526 net5827 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6527 net5828 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6528 net5829 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6529 net5830 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6530 net5831 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6531 net5832 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6532 net5833 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6533 net5834 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6537 net5838 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6541 net5842 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6542 net5843 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6544 net5845 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6545 net5846 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6546 net5847 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6547 net5848 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6549 net5850 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6552 net5853 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6554 net5855 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6559 net5860 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6562 net5863 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6564 net5865 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6566 net5867 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6568 net5869 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6580 net5881 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6581 net5882 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6585 net5886 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6588 net5889 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6590 net5891 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6598 net5899 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6599 net5900 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6602 net5903 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6606 net5907 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6608 net5909 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6610 net5911 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6612 net5913 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6613 net5914 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6614 net5915 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6615 net5916 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6616 net5917 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6617 net5918 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6618 net5919 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6619 net5920 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6620 net5921 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6628 net5929 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6629 net5930 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6630 net5931 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6631 net5932 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6634 net5935 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6636 net5937 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6637 net5938 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6638 net5939 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6645 net5946 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6649 net5950 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6656 net5957 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6659 net5960 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6667 net5968 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6671 net5972 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6673 net5974 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6678 net5979 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6680 net5981 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6681 net5982 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6682 net5983 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6855 net5984 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6856 net5985 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6857 net5986 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6859 net5988 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6861 net5990 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6863 net5992 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6868 net5997 does not start from an iterm or a bterm.
+[WARNING RCX-0114] Net 6869 net5998 does not start from an iterm or a bterm.
+[INFO RCX-0040] Final 34085 rc segments
+[INFO RCX-0439] Coupling Cap extraction genome_sketch_top ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0043] 63782 wires to be extracted
+[INFO RCX-0442] 46% completion -- 29906 wires have been extracted
+[INFO RCX-0442] 100% completion -- 63782 wires have been extracted
+[INFO RCX-0045] Extract 6868 nets, 40953 rsegs, 40953 caps, 99939 ccs
+[INFO RCX-0015] Finished extracting genome_sketch_top.
+[INFO RCX-0016] Writing SPEF ...
+[INFO RCX-0443] 6868 nets finished
+[INFO RCX-0017] Finished writing SPEF ...
+=== POST_ROUTE_CLOCK_SKEW ===
+Clock clk
+Latency      CRPR       Skew
+_8537_/CLK ^
+   3.81
+_9743_/CLK ^
+   3.08      0.00       0.73
+
+=== POST_ROUTE_REG2REG_SETUP ===
+Startpoint: _8521_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _9543_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout      Cap     Slew    Delay     Time   Description
+---------------------------------------------------------------------------------
+                            0.000    0.000   clock clk (rise edge)
+                            3.240    3.240   clock network delay (propagated)
+                   0.148    0.000    3.240 ^ _8521_/CLK (gf180mcu_fd_sc_mcu9t5v0__dffrnq_2)
+                   0.257    0.795    4.035 ^ _8521_/Q (gf180mcu_fd_sc_mcu9t5v0__dffrnq_2)
+     4    0.036                              u_nthash32.h_rev[17] (net)
+                   0.257    0.001    4.036 ^ _4310_/A2 (gf180mcu_fd_sc_mcu9t5v0__xnor2_1)
+                   0.496    0.409    4.445 ^ _4310_/ZN (gf180mcu_fd_sc_mcu9t5v0__xnor2_1)
+     2    0.019                              _1495_ (net)
+                   0.496    0.000    4.445 ^ _4340_/A3 (gf180mcu_fd_sc_mcu9t5v0__nand3_1)
+                   0.272    0.157    4.602 v _4340_/ZN (gf180mcu_fd_sc_mcu9t5v0__nand3_1)
+     1    0.008                              _1525_ (net)
+                   0.272    0.000    4.602 v _4341_/B2 (gf180mcu_fd_sc_mcu9t5v0__aoi22_1)
+                   0.409    0.340    4.942 ^ _4341_/ZN (gf180mcu_fd_sc_mcu9t5v0__aoi22_1)
+     1    0.008                              _1526_ (net)
+                   0.409    0.000    4.943 ^ _4342_/B2 (gf180mcu_fd_sc_mcu9t5v0__oai22_1)
+                   0.263    0.216    5.159 v _4342_/ZN (gf180mcu_fd_sc_mcu9t5v0__oai22_1)
+     1    0.011                              _1527_ (net)
+                   0.263    0.000    5.159 v _4343_/A2 (gf180mcu_fd_sc_mcu9t5v0__aoi21_1)
+                   0.385    0.289    5.448 ^ _4343_/ZN (gf180mcu_fd_sc_mcu9t5v0__aoi21_1)
+     1    0.010                              _1528_ (net)
+                   0.385    0.000    5.449 ^ _4345_/B1 (gf180mcu_fd_sc_mcu9t5v0__oai22_1)
+                   0.290    0.213    5.661 v _4345_/ZN (gf180mcu_fd_sc_mcu9t5v0__oai22_1)
+     1    0.014                              _1530_ (net)
+                   0.290    0.000    5.662 v _4346_/B2 (gf180mcu_fd_sc_mcu9t5v0__aoi22_1)
+                   0.646    0.479    6.141 ^ _4346_/ZN (gf180mcu_fd_sc_mcu9t5v0__aoi22_1)
+     1    0.020                              _1531_ (net)
+                   0.646    0.001    6.142 ^ _4361_/A2 (gf180mcu_fd_sc_mcu9t5v0__oai31_2)
+                   0.344    0.238    6.380 v _4361_/ZN (gf180mcu_fd_sc_mcu9t5v0__oai31_2)
+     1    0.030                              _1546_ (net)
+                   0.344    0.001    6.381 v _4372_/B1 (gf180mcu_fd_sc_mcu9t5v0__aoi22_4)
+                   0.468    0.348    6.729 ^ _4372_/ZN (gf180mcu_fd_sc_mcu9t5v0__aoi22_4)
+     3    0.043                              _1557_ (net)
+                   0.468    0.001    6.729 ^ repeater5385/I (gf180mcu_fd_sc_mcu9t5v0__buf_4)
+                   0.310    0.326    7.056 ^ repeater5385/Z (gf180mcu_fd_sc_mcu9t5v0__buf_4)
+     6    0.105                              net5385 (net)
+                   0.310    0.002    7.057 ^ repeater5384/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_12)
+                   0.157    0.271    7.329 ^ repeater5384/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_12)
+     8    0.134                              net5384 (net)
+                   0.157    0.002    7.331 ^ _4389_/S (gf180mcu_fd_sc_mcu9t5v0__mux2_2)
+                   0.246    0.488    7.819 v _4389_/Z (gf180mcu_fd_sc_mcu9t5v0__mux2_2)
+     4    0.050                              _1574_ (net)
+                   0.246    0.001    7.820 v _4430_/A1 (gf180mcu_fd_sc_mcu9t5v0__xor2_2)
+                   0.407    0.673    8.493 ^ _4430_/Z (gf180mcu_fd_sc_mcu9t5v0__xor2_2)
+     4    0.070                              _1615_ (net)
+                   0.407    0.003    8.496 ^ rebuffer5941/I (gf180mcu_fd_sc_mcu9t5v0__buf_4)
+                   0.149    0.229    8.724 ^ rebuffer5941/Z (gf180mcu_fd_sc_mcu9t5v0__buf_4)
+     2    0.042                              net5941 (net)
+                   0.149    0.001    8.725 ^ rebuffer5783/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_4)
+                   0.124    0.217    8.942 ^ rebuffer5783/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_4)
+     1    0.032                              net5783 (net)
+                   0.124    0.000    8.943 ^ _4512_/A2 (gf180mcu_fd_sc_mcu9t5v0__oai21_4)
+                   0.363    0.146    9.089 v _4512_/ZN (gf180mcu_fd_sc_mcu9t5v0__oai21_4)
+     1    0.043                              _1697_ (net)
+                   0.363    0.003    9.092 v repeater5377/I (gf180mcu_fd_sc_mcu9t5v0__buf_4)
+                   0.224    0.372    9.464 v repeater5377/Z (gf180mcu_fd_sc_mcu9t5v0__buf_4)
+     7    0.126                              net5377 (net)
+                   0.224    0.004    9.468 v repeater5376/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_12)
+                   0.187    0.288    9.757 v repeater5376/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_12)
+     7    0.186                              net5376 (net)
+                   0.188    0.008    9.764 v repeater5375/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_20)
+                   0.141    0.237   10.002 v repeater5375/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_20)
+     5    0.222                              net5375 (net)
+                   0.164    0.032   10.033 v repeater5374/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_20)
+                   0.148    0.247   10.280 v repeater5374/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_20)
+     7    0.225                              net5374 (net)
+                   0.149    0.004   10.284 v repeater5373/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_20)
+                   0.112    0.215   10.499 v repeater5373/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_20)
+     5    0.146                              net5373 (net)
+                   0.113    0.007   10.506 v _4623_/A1 (gf180mcu_fd_sc_mcu9t5v0__and3_4)
+                   0.184    0.302   10.808 v _4623_/Z (gf180mcu_fd_sc_mcu9t5v0__and3_4)
+     2    0.078                              _1808_ (net)
+                   0.184    0.004   10.811 v repeater5212/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_12)
+                   0.136    0.242   11.053 v repeater5212/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_12)
+     3    0.121                              net5212 (net)
+                   0.138    0.009   11.062 v repeater5211/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_20)
+                   0.149    0.241   11.303 v repeater5211/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_20)
+     6    0.228                              net5211 (net)
+                   0.149    0.003   11.306 v split5995/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_20)
+                   0.109    0.213   11.520 v split5995/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_20)
+     5    0.136                              net5995 (net)
+                   0.109    0.003   11.523 v _4917_/B1 (gf180mcu_fd_sc_mcu9t5v0__aoi22_4)
+                   0.555    0.359   11.881 ^ _4917_/ZN (gf180mcu_fd_sc_mcu9t5v0__aoi22_4)
+     1    0.061                              _2102_ (net)
+                   0.555    0.006   11.887 ^ _4919_/A3 (gf180mcu_fd_sc_mcu9t5v0__nand4_1)
+                   0.480    0.325   12.212 v _4919_/ZN (gf180mcu_fd_sc_mcu9t5v0__nand4_1)
+     1    0.021                              _2104_ (net)
+                   0.480    0.001   12.213 v _4920_/A4 (gf180mcu_fd_sc_mcu9t5v0__nor4_1)
+                   0.762    0.567   12.780 ^ _4920_/ZN (gf180mcu_fd_sc_mcu9t5v0__nor4_1)
+     1    0.013                              _2105_ (net)
+                   0.762    0.000   12.780 ^ _4942_/B1 (gf180mcu_fd_sc_mcu9t5v0__aoi221_1)
+                   0.458    0.305   13.085 v _4942_/ZN (gf180mcu_fd_sc_mcu9t5v0__aoi221_1)
+     1    0.010                              _2127_ (net)
+                   0.458    0.000   13.085 v _5070_/A1 (gf180mcu_fd_sc_mcu9t5v0__or4_2)
+                   0.289    0.640   13.725 v _5070_/Z (gf180mcu_fd_sc_mcu9t5v0__or4_2)
+     2    0.038                              _2255_ (net)
+                   0.289    0.001   13.726 v _5420_/A2 (gf180mcu_fd_sc_mcu9t5v0__oai22_2)
+                   0.532    0.274   14.000 ^ _5420_/ZN (gf180mcu_fd_sc_mcu9t5v0__oai22_2)
+     1    0.019                              _2605_ (net)
+                   0.532    0.001   14.001 ^ _5421_/B (gf180mcu_fd_sc_mcu9t5v0__aoi21_2)
+                   0.349    0.272   14.273 v _5421_/ZN (gf180mcu_fd_sc_mcu9t5v0__aoi21_2)
+     1    0.033                              _2606_ (net)
+                   0.349    0.001   14.274 v _5599_/B (gf180mcu_fd_sc_mcu9t5v0__aoi211_4)
+                   0.531    0.409   14.683 ^ _5599_/ZN (gf180mcu_fd_sc_mcu9t5v0__aoi211_4)
+     1    0.030                              _2784_ (net)
+                   0.531    0.000   14.684 ^ _5602_/A1 (gf180mcu_fd_sc_mcu9t5v0__oai21_4)
+                   0.300    0.203   14.887 v _5602_/ZN (gf180mcu_fd_sc_mcu9t5v0__oai21_4)
+     3    0.064                              _2787_ (net)
+                   0.300    0.002   14.889 v rebuffer5984/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_4)
+                   0.128    0.261   15.150 v rebuffer5984/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_4)
+     2    0.033                              net5984 (net)
+                   0.128    0.000   15.150 v repeater4980/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_8)
+                   0.108    0.208   15.358 v repeater4980/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_8)
+     2    0.054                              net4980 (net)
+                   0.108    0.000   15.359 v rebuffer5802/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_1)
+                   0.867    0.707   16.066 v rebuffer5802/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_1)
+     4    0.085                              net5802 (net)
+                   0.867    0.007   16.073 v repeater4978/I (gf180mcu_fd_sc_mcu9t5v0__buf_4)
+                   0.175    0.450   16.523 v repeater4978/Z (gf180mcu_fd_sc_mcu9t5v0__buf_4)
+     5    0.078                              net4978 (net)
+                   0.175    0.002   16.525 v repeater4977/I (gf180mcu_fd_sc_mcu9t5v0__buf_4)
+                   0.252    0.334   16.858 v repeater4977/Z (gf180mcu_fd_sc_mcu9t5v0__buf_4)
+     5    0.147                              net4977 (net)
+                   0.252    0.005   16.863 v repeater4976/I (gf180mcu_fd_sc_mcu9t5v0__buf_4)
+                   0.234    0.345   17.208 v repeater4976/Z (gf180mcu_fd_sc_mcu9t5v0__buf_4)
+     4    0.135                              net4976 (net)
+                   0.235    0.005   17.214 v repeater4975/I (gf180mcu_fd_sc_mcu9t5v0__clkbuf_8)
+                   0.196    0.296   17.510 v repeater4975/Z (gf180mcu_fd_sc_mcu9t5v0__clkbuf_8)
+     4    0.132                              net4975 (net)
+                   0.197    0.007   17.517 v _8095_/A3 (gf180mcu_fd_sc_mcu9t5v0__oai31_4)
+                   0.680    0.494   18.011 ^ _8095_/ZN (gf180mcu_fd_sc_mcu9t5v0__oai31_4)
+     5    0.064                              _4152_ (net)
+                   0.680    0.001   18.013 ^ _8098_/S (gf180mcu_fd_sc_mcu9t5v0__mux2_1)
+                   0.217    0.514   18.527 v _8098_/Z (gf180mcu_fd_sc_mcu9t5v0__mux2_1)
+     1    0.017                              _1124_ (net)
+                   0.217    0.001   18.528 v _9543_/D (gf180mcu_fd_sc_mcu9t5v0__dffrnq_1)
+                                    18.528   data arrival time
+
+                            5.000    5.000   clock clk (rise edge)
+                            3.311    8.311   clock network delay (propagated)
+                           -0.200    8.111   clock uncertainty
+                            0.000    8.111   clock reconvergence pessimism
+                                     8.111 ^ _9543_/CLK (gf180mcu_fd_sc_mcu9t5v0__dffrnq_1)
+                           -0.197    7.914   library setup time
+                                     7.914   data required time
+---------------------------------------------------------------------------------
+                                     7.914   data required time
+                                   -18.528   data arrival time
+---------------------------------------------------------------------------------
+                                   -10.614   slack (VIOLATED)
+
+
+=== POST_ROUTE_REG2REG_HOLD ===
+Startpoint: _8521_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _8521_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout      Cap     Slew    Delay     Time   Description
+---------------------------------------------------------------------------------
+                            0.000    0.000   clock clk (rise edge)
+                            3.240    3.240   clock network delay (propagated)
+                   0.148    0.000    3.240 ^ _8521_/CLK (gf180mcu_fd_sc_mcu9t5v0__dffrnq_2)
+                   0.168    0.661    3.901 v _8521_/Q (gf180mcu_fd_sc_mcu9t5v0__dffrnq_2)
+     4    0.036                              u_nthash32.h_rev[17] (net)
+                   0.168    0.000    3.901 v _6823_/A1 (gf180mcu_fd_sc_mcu9t5v0__nand2_1)
+                   0.149    0.139    4.040 ^ _6823_/ZN (gf180mcu_fd_sc_mcu9t5v0__nand2_1)
+     1    0.007                              _3900_ (net)
+                   0.149    0.000    4.040 ^ _6826_/A1 (gf180mcu_fd_sc_mcu9t5v0__nand2_1)
+                   0.111    0.094    4.134 v _6826_/ZN (gf180mcu_fd_sc_mcu9t5v0__nand2_1)
+     1    0.006                              _0102_ (net)
+                   0.111    0.000    4.134 v _8521_/D (gf180mcu_fd_sc_mcu9t5v0__dffrnq_2)
+                                     4.134   data arrival time
+
+                            0.000    0.000   clock clk (rise edge)
+                            3.240    3.240   clock network delay (propagated)
+                            0.100    3.340   clock uncertainty
+                            0.000    3.340   clock reconvergence pessimism
+                                     3.340 ^ _8521_/CLK (gf180mcu_fd_sc_mcu9t5v0__dffrnq_2)
+                            0.068    3.409   library hold time
+                                     3.409   data required time
+---------------------------------------------------------------------------------
+                                     3.409   data required time
+                                    -4.134   data arrival time
+---------------------------------------------------------------------------------
+                                     0.726   slack (MET)
+
+
+=== POWER_5V0_UNGATED_BASELINE ===
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power
+----------------------------------------------------------------
+Sequential             3.17e-01   7.21e-02   3.34e-07   3.89e-01  38.5%
+Combinational          4.76e-01   1.45e-01   1.38e-06   6.21e-01  61.5%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  7.92e-01   2.17e-01   1.72e-06   1.01e+00 100.0%
+                          78.5%      21.5%       0.0%
+=== POWER_5V0_SARS_COV_2_VCD ===
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power
+----------------------------------------------------------------
+Sequential             2.20e-01   4.54e-03   3.34e-07   2.24e-01  27.0%
+Combinational          4.61e-01   1.45e-01   1.38e-06   6.05e-01  73.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  6.80e-01   1.49e-01   1.72e-06   8.30e-01 100.0%
+                          82.0%      18.0%       0.0%

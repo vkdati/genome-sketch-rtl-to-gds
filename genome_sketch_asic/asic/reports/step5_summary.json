@@ -1,0 +1,159 @@
+{
+  "spef_extracted_nets": 6868,
+  "spef_r_segments": 40860,
+  "spef_ground_caps": 40860,
+  "spef_coupling_caps": 99916,
+  "postroute_clock_latency_max_ns": 3.81,
+  "postroute_clock_latency_min_ns": 3.08,
+  "postroute_clock_skew_ns": 0.73,
+  "postroute_hold_slack_ns": 0.726,
+  "postroute_hold_status": "MET",
+  "postroute_min_period_gf180_ns": 15.614,
+  "postroute_fmax_gf180_mhz": 64.05,
+  "postroute_min_period_scl180_scaled_ns": 4.436,
+  "postroute_fmax_scl180_scaled_mhz": 225.4,
+  "postroute_gl_sim_status": "PASS (31,968 / 31,968 cycles, 512 / 512 HLL regs, 0 errors)",
+  "vcd_activity_sars_cov_2": {
+    "num_hll_signals": 256,
+    "num_nthash_signals": 9,
+    "num_comb_signals": 6581,
+    "avg_hll_toggles": 2.4,
+    "avg_hll_activity": 8e-05,
+    "avg_nthash_toggles": 13823.8,
+    "avg_nthash_activity": 0.46229,
+    "avg_comb_toggles": 6168.3,
+    "avg_comb_activity": 0.20628,
+    "overall_mean_activity": 0.17195
+  },
+  "power_1v8_tt_sars_cov_2": {
+    "sequential": {
+      "internal_mw": 25.8,
+      "switching_mw": 0.53,
+      "leakage_uw": 0.0476,
+      "total_mw": 26.3
+    },
+    "combinational": {
+      "internal_mw": 18.5,
+      "switching_mw": 17.0,
+      "leakage_uw": 0.173,
+      "total_mw": 35.5
+    },
+    "macro": {
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "leakage_uw": 0.0,
+      "total_mw": 0.0
+    },
+    "pad": {
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "leakage_uw": 0.0,
+      "total_mw": 0.0
+    },
+    "total": {
+      "internal_mw": 44.2,
+      "switching_mw": 17.6,
+      "leakage_uw": 0.221,
+      "total_mw": 61.800000000000004
+    }
+  },
+  "power_1v8_tt_ungated": {
+    "sequential": {
+      "internal_mw": 36.1,
+      "switching_mw": 8.47,
+      "leakage_uw": 0.0476,
+      "total_mw": 44.6
+    },
+    "combinational": {
+      "internal_mw": 19.7,
+      "switching_mw": 17.2,
+      "leakage_uw": 0.173,
+      "total_mw": 36.900000000000006
+    },
+    "macro": {
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "leakage_uw": 0.0,
+      "total_mw": 0.0
+    },
+    "pad": {
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "leakage_uw": 0.0,
+      "total_mw": 0.0
+    },
+    "total": {
+      "internal_mw": 55.800000000000004,
+      "switching_mw": 25.7,
+      "leakage_uw": 0.221,
+      "total_mw": 81.4
+    }
+  },
+  "power_5v0_tt_sars_cov_2": {
+    "sequential": {
+      "internal_mw": 220.0,
+      "switching_mw": 4.54,
+      "leakage_uw": 0.334,
+      "total_mw": 224.0
+    },
+    "combinational": {
+      "internal_mw": 461.0,
+      "switching_mw": 145.0,
+      "leakage_uw": 1.38,
+      "total_mw": 605.0
+    },
+    "macro": {
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "leakage_uw": 0.0,
+      "total_mw": 0.0
+    },
+    "pad": {
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "leakage_uw": 0.0,
+      "total_mw": 0.0
+    },
+    "total": {
+      "internal_mw": 680.0,
+      "switching_mw": 149.0,
+      "leakage_uw": 1.72,
+      "total_mw": 830.0
+    }
+  },
+  "power_5v0_tt_ungated": {
+    "sequential": {
+      "internal_mw": 317.0,
+      "switching_mw": 72.1,
+      "leakage_uw": 0.334,
+      "total_mw": 389.0
+    },
+    "combinational": {
+      "internal_mw": 476.0,
+      "switching_mw": 145.0,
+      "leakage_uw": 1.38,
+      "total_mw": 621.0
+    },
+    "macro": {
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "leakage_uw": 0.0,
+      "total_mw": 0.0
+    },
+    "pad": {
+      "internal_mw": 0.0,
+      "switching_mw": 0.0,
+      "leakage_uw": 0.0,
+      "total_mw": 0.0
+    },
+    "total": {
+      "internal_mw": 792.0,
+      "switching_mw": 217.0,
+      "leakage_uw": 1.72,
+      "total_mw": 1010.0
+    }
+  },
+  "power_saving_from_write_gating_pct": 24.08,
+  "energy_per_bp_1v8_pj": 309.0,
+  "energy_per_bp_5v0_pj": 4150.0
+}

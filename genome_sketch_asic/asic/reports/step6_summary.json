@@ -1,0 +1,140 @@
+{
+  "step": 6,
+  "design": "genome_sketch_top",
+  "pdk_target": "gf180mcuD (9-track 5.04um standard cells, 4-Metal SCL-constrained)",
+  "filler_and_physical_instances": {
+    "total_physical_instances": 18531,
+    "active_std_cells": 6853,
+    "dff_cells": 1392,
+    "cts_clock_buffers": 766,
+    "well_tap_cells": 2131,
+    "endcap_cells": 290,
+    "decap_cells": 4072,
+    "filler_cells": 5185,
+    "decap_area_um2": 84434.92,
+    "filler_area_um2": 48121.92,
+    "placement_violations": 0
+  },
+  "gdsii_signoff": {
+    "gds_file": "/media/nithin/Local Disk/BTP/genome_sketch_asic/asic/gds/genome_sketch_top.gds",
+    "gds_size_bytes": 9644336,
+    "gds_size_mb": 9.2,
+    "die_width_um": 781.76,
+    "die_height_um": 781.76,
+    "total_cell_definitions": 121,
+    "top_cell_references": 79767,
+    "total_hierarchical_polygons": 969550,
+    "metal5_polygons": 0,
+    "gds_layers": {
+      "0/0": {
+        "description": "PR_bndry / DIEAREA",
+        "top_polygons": 1,
+        "full_chip_polygons": 37063
+      },
+      "21/0": {
+        "description": "Nwell (21/0)",
+        "top_polygons": 0,
+        "full_chip_polygons": 18531
+      },
+      "22/0": {
+        "description": "COMP / Active Diffusion (22/0)",
+        "top_polygons": 0,
+        "full_chip_polygons": 41302
+      },
+      "30/0": {
+        "description": "Poly2 Gate (30/0)",
+        "top_polygons": 0,
+        "full_chip_polygons": 59489
+      },
+      "31/0": {
+        "description": "Nplus Implant (31/0)",
+        "top_polygons": 0,
+        "full_chip_polygons": 20952
+      },
+      "32/0": {
+        "description": "Pplus Implant (32/0)",
+        "top_polygons": 0,
+        "full_chip_polygons": 18531
+      },
+      "33/0": {
+        "description": "Contact (33/0)",
+        "top_polygons": 0,
+        "full_chip_polygons": 357341
+      },
+      "34/0": {
+        "description": "Metal1 Drawing (34/0)",
+        "top_polygons": 5,
+        "full_chip_polygons": 129422
+      },
+      "35/0": {
+        "description": "Via1 (35/0)",
+        "top_polygons": 0,
+        "full_chip_polygons": 30264
+      },
+      "36/0": {
+        "description": "Metal2 Drawing (36/0)",
+        "top_polygons": 7809,
+        "full_chip_polygons": 106754
+      },
+      "36/10": {
+        "description": "Metal2 Pin/Label (36/10)",
+        "top_polygons": 2,
+        "full_chip_polygons": 2
+      },
+      "38/0": {
+        "description": "Via2 (38/0)",
+        "top_polygons": 0,
+        "full_chip_polygons": 32252
+      },
+      "40/0": {
+        "description": "Via3 (40/0)",
+        "top_polygons": 0,
+        "full_chip_polygons": 5200
+      },
+      "42/0": {
+        "description": "Metal3 Drawing (42/0)",
+        "top_polygons": 1883,
+        "full_chip_polygons": 53892
+      },
+      "42/10": {
+        "description": "Metal3 Pin/Label (42/10)",
+        "top_polygons": 20,
+        "full_chip_polygons": 20
+      },
+      "46/0": {
+        "description": "Metal4 Drawing (46/0)",
+        "top_polygons": 18,
+        "full_chip_polygons": 2942
+      },
+      "55/0": {
+        "description": "Layer 55/0",
+        "top_polygons": 0,
+        "full_chip_polygons": 18531
+      },
+      "112/1": {
+        "description": "Layer 112/1",
+        "top_polygons": 0,
+        "full_chip_polygons": 18531
+      },
+      "204/0": {
+        "description": "DNWell / Substrate (204/0)",
+        "top_polygons": 0,
+        "full_chip_polygons": 18531
+      }
+    }
+  },
+  "figures_generated": [
+    "/media/nithin/Local Disk/BTP/genome_sketch_asic/asic/figures/layout_full_gds.png",
+    "/media/nithin/Local Disk/BTP/genome_sketch_asic/asic/figures/floorplan_architecture_map.png",
+    "/media/nithin/Local Disk/BTP/genome_sketch_asic/asic/figures/cts_clock_tree_map.png",
+    "/media/nithin/Local Disk/BTP/genome_sketch_asic/asic/figures/ppa_and_metal_summary.png"
+  ],
+  "drc_and_physical_audit": {
+    "tritonroute_drc_violations": 0,
+    "placement_legality_violations": 0,
+    "metal5_forbidden_polygons": 0,
+    "post_route_hold_violations": 0,
+    "post_route_gate_level_sim_errors": 0,
+    "overall_signoff_status": "PASS"
+  }
+}

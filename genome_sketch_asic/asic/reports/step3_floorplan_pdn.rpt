@@ -1,0 +1,54 @@
+OpenROAD f12e2f474102bfb875eeee57fb610d7d7de17770 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /home/nithin/.volare/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/techlef/gf180mcu_fd_sc_mcu9t5v0__nom.tlef
+[INFO ODB-0223]     Created 15 technology layers
+[INFO ODB-0224]     Created 56 technology vias
+[INFO ODB-0226] Finished LEF file:  /home/nithin/.volare/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/techlef/gf180mcu_fd_sc_mcu9t5v0__nom.tlef
+[INFO ODB-0222] Reading LEF file: /home/nithin/.volare/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lef/gf180mcu_fd_sc_mcu9t5v0.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/nithin/.volare/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lef/gf180mcu_fd_sc_mcu9t5v0.lef at line 2.
+
+[INFO ODB-0225]     Created 229 library cells
+[INFO ODB-0226] Finished LEF file:  /home/nithin/.volare/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lef/gf180mcu_fd_sc_mcu9t5v0.lef
+[WARNING IFP-0028] Core area lower left (24.000, 24.000) snapped to (24.080, 25.200).
+[INFO IFP-0001] Added 145 rows of 1310 sites.
+[INFO PPL-0048] Restrict pins [clk rst_n clear_sketch clear_window valid_in base_in[0] base_in[1]] to region 0.0u-781.76u at the left edge.
+[INFO PPL-0048] Restrict pins [read_addr[0] read_addr[1] read_addr[2] read_addr[3] read_addr[4] read_addr[5] read_addr[6] read_addr[7] read_data[0] read_data[1] read_data[2] read_data[3] read_data[4]] to region 0.0u-781.76u at the right edge.
+[INFO PPL-0048] Restrict pins [kmer_valid write_en] to region 0.0u-781.76u at the bottom edge.
+Found 0 macro blocks.
+[INFO PPL-0010] Tentative 0 to set up sections.
+[INFO PPL-0001] Number of slots          536
+[INFO PPL-0002] Number of I/O            22
+[INFO PPL-0003] Number of I/O w/sink     22
+[INFO PPL-0004] Number of I/O w/o sink   0
+[INFO PPL-0005] Slots per section        200
+[INFO PPL-0006] Slots increase factor    0.01
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 8910.16 um.
+[INFO TAP-0001] Found 0 macro blocks.
+[INFO TAP-0002] Original rows: 145
+[INFO TAP-0003] Created 0 rows for a total of 145 rows.
+[INFO TAP-0004] Inserted 290 endcaps.
+[INFO TAP-0005] Inserted 2131 tapcells.
+[INFO PDN-0008] Design name is genome_sketch_top.
+[INFO PDN-0009] Reading technology data.
+[WARNING PDN-0018] No macro grid specifications found - no straps added.
+[INFO PDN-0011] ****** INFO ******
+Type: stdcell, core_grid
+    Core Rings
+      Layer: Metal3  -  width: 2.000  spacing: 2.000  core_offset: 6.000 
+      Layer: Metal4  -  width: 2.000  spacing: 2.000  core_offset: 6.000 
+    Stdcell Rails
+      Layer: Metal1  -  width: 0.600  pitch: 10.080 
+    Straps
+      Layer: Metal4  -  width: 1.600  pitch: 120.000  offset: 24.000 
+      Layer: Metal3  -  width: 1.600  pitch: 120.000  offset: 24.000 
+    Connect: {Metal1 Metal4} {Metal3 Metal4}
+[INFO PDN-0012] **** END INFO ****
+[INFO PDN-0013] Inserting stdcell grid - core_grid.
+[INFO PDN-0015] Writing to database.
+=== FLOORPLAN_DESIGN_AREA ===
+Design area 261332 u^2 49% utilization.
+STEP3_FLOORPLAN_PDN_SUCCESS
+
