@@ -1,18 +1,11 @@
 // ============================================================================
-// Module: lzd24.v (Phase B - Step 2: Stage 3 Address Decode & 24-Bit LZD)
-// Project: SCL 180nm Streaming Genome Sketching ASIC (genome-sketch-rtl-to-gds)
+// Module: lzd24.v
+// Project: Streaming Genome Sketching ASIC (180nm CMOS)
 //
 // Description:
-//   Purely combinational Stage 3 decoder that extracts the HLL bank/register
-//   address from the upper 8 bits of `h_mixed[31:0]` and computes the 5-bit
-//   HyperLogLog geometric rank `rho` (1..25) from the lower 24 bits
-//   `h_mixed[23:0]` via a 24-bit Leading-Zero Detector + 1 (LZD24).
-//
-// Bit-Field Mapping (matching golden_model/banked_hll.py):
-//   - bank_id[1:0]  = h_mixed[31:30] (selects Bank 0..3)
-//   - sub_addr[5:0] = h_mixed[29:24] (selects Register 0..63 within Bank)
-//   - flat_idx[7:0] = h_mixed[31:24] ({bank_id, sub_addr}, 0..255)
-//   - rho[4:0]      = LZC(h_mixed[23:0]) + 1  (5-bit unsigned in 1..25)
+//   Combinational decoder that extracts the HLL bank/register address from the
+//   upper 8 bits of h_mixed[31:0] and computes the 5-bit geometric rank rho
+//   (1..25) from h_mixed[23:0] via a 24-bit leading-zero detector.
 // ============================================================================
 
 `timescale 1ns / 1ps

@@ -1,23 +1,12 @@
 // ============================================================================
-// Module: nthash32_engine.v (Phase B - Step 1: Stage 1 & Stage 2 RTL)
-// Project: SCL 180nm Streaming Genome Sketching ASIC (genome-sketch-rtl-to-gds)
+// Module: nthash32_engine.v
+// Project: Streaming Genome Sketching ASIC (180nm CMOS)
 //
 // Description:
-//   Synthesizable, multiplier-free 32-bit Rolling Canonical ntHash Engine for
-//   k = 21 DNA k-mers. Combines:
-//     - Stage 1: 21-base sliding-window shift register (42 DFFs) + 5-bit
-//                warm-up saturation counter (0..21).
-//     - Stage 2: Dual parallel rolling polynomial hash datapaths (Forward &
-//                Watson-Crick Reverse-Complement), canonical unsigned
-//                comparator min(h_fwd, h_rev), and 3-stage XOR-shift
-//                avalanche finalizer.
-//
-// SCL 180nm Hardware Optimizations:
-//   - Zero multipliers or barrel shifters: uses only 1-bit wire rotations
-//     (ROL32_1 / ROR32_1), 4-to-1 constant LUT muxes, and 32-bit XOR gates.
-//   - Self-initializing warm-up: masks the exiting base (b_out) XOR terms
-//     while (valid_count < 21), accumulating the exact 21-mer hash on cycle 21
-//     without separate initialization hardware.
+//   Multiplier-free 32-bit Rolling Canonical ntHash Engine for k = 21 DNA k-mers.
+//   - 21-base sliding-window shift register (42 DFFs) + 5-bit warm-up counter.
+//   - Dual rolling polynomial hash datapaths (Forward & Reverse-Complement).
+//   - Canonical comparator min(h_fwd, h_rev) and 3-stage XOR-shift avalanche mixer.
 // ============================================================================
 
 `timescale 1ns / 1ps

@@ -1,25 +1,13 @@
 #!/usr/bin/env python3
 """
-Phase A (3): Self-Checking Hardware Verification & Biological Benchmark Suite
-Project: SCL 180nm Streaming Genome Sketching ASIC (ntHash-32 + Banked HLL)
+Biological Verification & Benchmarking Suite
+Project: Streaming Genome Sketching ASIC (180nm CMOS)
 
-Executes 4 rigorous verification & benchmarking suites:
-  1. Test 1 (Rolling vs. Direct Equivalence & 'N'-Gap Reset):
-     Verifies that 1-cycle rolling ntHash-32 matches O(k) direct polynomial hashing
-     on every cycle and properly suppresses <21 bp islands between 'N' gaps.
-  2. Test 2 (Watson-Crick Strand Invariance):
-     Proves that streaming a genome forward vs. reverse-complemented yields
-     100% bit-identical 256 x 5-bit HLL register arrays.
-  3. Test 3 (Controlled Mutation Monotonicity):
-     Evaluates 0%, 1%, 5%, and 10% mutated sequences against exact k-mer sets.
-  4. Test 4 (NCBI RefSeq Viral & Bacterial Benchmark + Hardware Toggle Profiling):
-     Benchmarks cardinality accuracy, Jaccard similarity, Mash distance,
-     4-bank load balance, and DFF write-toggle savings across real genomes.
-
-Outputs:
-  - Console verification table
-  - golden_model/verification_results.json
-  - golden_model/verification_report.md
+Verifies:
+  1. Rolling vs. Direct ntHash equivalence and 'N'-gap recovery
+  2. Strand invariance (forward vs. reverse-complement)
+  3. Mutation sensitivity across synthetic SNV series
+  4. Cardinality and pairwise ANI accuracy on NCBI RefSeq genomes
 """
 
 import json
@@ -430,9 +418,9 @@ def write_markdown_report(summary: Dict[str, object]) -> None:
 
     lines = [
         "# Golden Model Verification & Biological Benchmark Report",
-        "**Architecture:** SCL 180nm Streaming Genome Sketching Engine (`ntHash-32` + $4\\times 64\\times 5\\text{-bit}$ Banked HLL)  ",
+        "**Architecture:** Streaming Genome Sketching Engine (`ntHash-32`, $k=21$ + $4\\times 64\\times 5\\text{-bit}$ Banked HLL)  ",
         f"**Generated:** {summary['timestamp']}  ",
-        "**Verification Status:** **ALL HARDWARE & BIOLOGICAL CHECKS PASSED (100% BIT-ACCURATE)**",
+        "**Status:** All unit tests and biological benchmarks passed.",
         "",
         "---",
         "",

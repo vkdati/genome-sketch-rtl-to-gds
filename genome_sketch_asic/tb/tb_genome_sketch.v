@@ -1,22 +1,11 @@
 // ============================================================================
-// Testbench: tb_genome_sketch.v (Phase B - Step 5: Self-Checking RTL Testbench)
-// Project: SCL 180nm Streaming Genome Sketching ASIC (genome-sketch-rtl-to-gds)
+// Testbench: tb_genome_sketch.v
+// Project: Streaming Genome Sketching ASIC (180nm CMOS)
 //
 // Description:
-//   Self-checking cycle-accurate Verilog testbench for `genome_sketch_top`.
-//   Executes two complete verification suites back-to-back:
-//     1. Suite 1 (Corner-Case Regression - 2,065 cycles):
-//        Tests homopolymers, periodic repeats, contig boundary resets,
-//        ambiguous 'N' gaps, and 20-bp sub-k island suppression.
-//     2. Suite 2 (Full SARS-CoV-2 Genome - 29,903 cycles):
-//        Streams the entire NCBI RefSeq SARS-CoV-2 reference genome
-//        (NC_045512.2) at 200 MHz (5 ns clock period).
-//
-//   On EVERY clock cycle, verifies all 8 internal pipeline signals against
-//   `expected_trace.hex` (`h_fwd`, `h_rev`, `h_mixed`, `kmer_valid`,
-//   `write_en`, `flat_idx`, `rho`, `new_val`). After streaming, sweeps
-//   `read_addr[7:0]` from 0 to 255 to verify all 256 x 5-bit HLL flip-flops
-//   against `expected_sketch.hex`.
+//   RTL testbench for `genome_sketch_top`. Compares internal pipeline signals
+//   and final 256-register HLL sketches against golden vectors across synthetic
+//   and SARS-CoV-2 test sequences.
 // ============================================================================
 
 `timescale 1ns / 1ps

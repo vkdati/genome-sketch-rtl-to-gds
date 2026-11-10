@@ -1,23 +1,12 @@
 // ============================================================================
-// Module: hll_banked_mem.v (Phase B - Step 3: Stage 4 Banked HLL DFF Memory)
-// Project: SCL 180nm Streaming Genome Sketching ASIC (genome-sketch-rtl-to-gds)
+// Module: hll_banked_mem.v
+// Project: Streaming Genome Sketching ASIC (180nm CMOS)
 //
 // Description:
-//   Synthesizable, SRAM-less 256 x 5-bit HyperLogLog (HLL) Register File
-//   implemented using standard D-Flip-Flops (1,280 DFFs total = 160 bytes)
-//   and partitioned into 4 independent banks of 64 registers each.
-//
-// SCL 180nm Physical Design Optimizations:
-//   1. No SRAM Compiler Required: Fits in < 0.1 mm^2 of standard-cell logic.
-//   2. 4-Bank Partitioning (4 x 64 x 5-bit): Replaces a congested 256-to-1
-//      global multiplexer crossbar with four local 64-to-1 bank muxes + a
-//      4-to-1 bank selector, ensuring clean routing on the 4-Metal (4M) stack.
-//   3. Ultra-Low-Power Write Gating: Flip-flops update ONLY when
-//      `kmer_valid && (rho > old_val)`. Over 99.95% of clock cycles on
-//      bacterial genomes are write-gated, enabling Cadence Genus to insert
-//      Integrated Clock Gating (ICG) cells per bank/register.
-//   4. Narrow Host Readout Port: Provides an indexed 8-bit `read_addr[7:0]`
-//      to 5-bit `read_data[4:0]` readout port to avoid pad limitation.
+//   SRAM-less 256 x 5-bit HyperLogLog register file using standard-cell
+//   D-flip-flops (1,280 DFFs total), partitioned into 4 banks of 64 registers
+//   to reduce mux fan-in for 4-metal routing.
+//   Includes conditional write-gating (rho > old_val) and an 8-bit host readout port.
 // ============================================================================
 
 `timescale 1ns / 1ps

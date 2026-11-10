@@ -1,20 +1,12 @@
 #!/usr/bin/env python3
 """
-Phase A (1): Automated Dataset Downloader & Synthetic Corner-Case Generator
-Project: Streaming Genome Sketching ASIC (ntHash-32 + Banked HLL on SCL 180nm)
+NCBI RefSeq Dataset Downloader & Synthetic Sequence Generator
+Project: Streaming Genome Sketching ASIC (180nm CMOS)
 
-Generates & fetches the Three-Tier Verification and Benchmark Dataset Suite:
-  - Tier 1 (data/synthetic/): Deterministic synthetic FASTA files testing hardware
-    corner cases (reverse-complement strand invariance, 'N' gap resets, homopolymers,
-    and controlled mutation rates: 0%, 1%, 5%, 10%).
-  - Tier 2 (data/viral/): Complete NCBI RefSeq viral genomes (~185 KB total) for
-    fast cycle-accurate RTL simulation (< 1 second per genome in Verilog).
-  - Tier 3 (data/bacterial/): Complete NCBI RefSeq bacterial genomes (~18 MB total)
-    for publication-grade species & strain classification vs. Mash.
-
-Usage:
-  python download_datasets.py                 # Downloads all tiers (Synthetic + Viral + Bacterial)
-  python download_datasets.py --skip-bacterial # Fast mode: only Synthetic + Viral (~200 KB)
+Downloads and generates the benchmark suite:
+  - Synthetic corner cases (homopolymers, N-gap resets, mutation series)
+  - Viral genomes (~185 KB: SARS-CoV-2, SARS-1, MERS, Ebola, Phage Lambda)
+  - Bacterial genomes (~18 MB: E. coli K-12, E. coli O157:H7, S. enterica, S. aureus)
 """
 
 import argparse

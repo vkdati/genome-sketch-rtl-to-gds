@@ -1,16 +1,11 @@
 // ============================================================================
-// Testbench: tb_genome_sketch_gl.v (Phase C - Step 2 & Step 5: Gate-Level TB)
-// Project: SCL 180nm Streaming Genome Sketching ASIC (genome-sketch-rtl-to-gds)
+// Testbench: tb_genome_sketch_gl.v
+// Project: Streaming Genome Sketching ASIC (180nm CMOS)
 //
 // Description:
-//   Self-checking Post-Synthesis & Post-Layout Gate-Level Netlist Testbench
-//   for `genome_sketch_top`. Uses strictly the 22 external ASIC pins:
-//     - Verifies `kmer_valid` and `write_en` on EVERY cycle across 31,968
-//       cycles (2,065-cycle Corner-Case Suite + 29,903-cycle SARS-CoV-2).
-//     - Verifies all 256 x 5-bit HLL registers after Suite 1 and Suite 2
-//       (512 / 512 registers total) via `read_addr[7:0] -> read_data[4:0]`.
-//     - Optionally dumps VCD switching activity (`-DDUMP_GL_VCD`) on the
-//       synthesized/routed gate-level netlist for OpenSTA power signoff.
+//   Post-synthesis and post-route gate-level testbench for `genome_sketch_top`.
+//   Uses the 22-pin external interface to check kmer_valid, write_en, and the
+//   final HLL registers via read_addr -> read_data.
 // ============================================================================
 
 `timescale 1ns / 1ps

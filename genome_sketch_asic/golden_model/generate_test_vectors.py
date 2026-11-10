@@ -1,21 +1,10 @@
 #!/usr/bin/env python3
 """
-Phase A (4): Verilog RTL Test-Vector & Header Generator
-Project: SCL 180nm Streaming Genome Sketching ASIC (ntHash-32 + Banked HLL)
+Verilog Test-Vector & Header Generator
+Project: Streaming Genome Sketching ASIC (180nm CMOS)
 
-Generates standard hexadecimal memory files (.hex) compatible with Verilog
-`$readmemh()` in Icarus Verilog (iverilog), Verilator, and Cadence Questa/Xcelium,
-plus an auto-generated Verilog constants header (`nthash32_seeds.vh`).
-
-Generated Files in `D:\BTP\genome_sketch_asic\tv\`:
-  1. `stimulus_dna.hex`              (2,065 cycles: Homopolymers + Contig Break + 'N'-Gap Islands)
-  2. `expected_trace.hex`            (2,065 lines x 128-bit cycle-accurate internal wire trace)
-  3. `expected_sketch.hex`           (256 lines x 8-bit final HLL register dump)
-  4. `sars_cov_2_stimulus.hex`       (29,903 cycles: Full SARS-CoV-2 Wuhan RefSeq genome)
-  5. `sars_cov_2_expected_trace.hex` (29,903 lines x 128-bit cycle-accurate trace)
-  6. `sars_cov_2_expected_sketch.hex`(256 lines x 8-bit final SARS-CoV-2 HLL sketch)
-  7. `nthash32_seeds.vh`             (Auto-generated Verilog `localparam` seed lookup tables)
-  8. `README_TV_FORMAT.md`           (Bit-field specification & sample Verilog testbench snippet)
+Generates .hex stimulus and expected transaction files for $readmemh,
+plus the hardwired seed header (nthash32_seeds.vh).
 """
 
 import json
@@ -290,7 +279,7 @@ def main() -> int:
 
     elapsed = time.time() - t0
     print("\n" + "=" * 76)
-    print(f"[Phase A (4)] Verilog Test Vectors Generated in {elapsed:.2f}s!")
+    print(f"Verilog Test Vectors Generated in {elapsed:.2f}s")
     print("=" * 76)
     print(
         f"  1. Regression Suite : {reg_meta['total_cycles']:,} cycles | "

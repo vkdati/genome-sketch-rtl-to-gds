@@ -1,19 +1,10 @@
 // ============================================================================
-// Module: genome_sketch_top.v (Phase B - Step 4: Top-Level ASIC Wrapper)
-// Project: SCL 180nm Streaming Genome Sketching ASIC (genome-sketch-rtl-to-gds)
+// Module: genome_sketch_top.v
+// Project: Streaming Genome Sketching ASIC (180nm CMOS)
 //
 // Description:
-//   Top-level synthesizable ASIC module integrating:
-//     - Stage 1 & 2 : `nthash32_engine` (21-bp window + rolling canonical ntHash-32)
-//     - Stage 3     : `lzd24`           (Address decoder + 24-bit Leading-Zero Detector)
-//     - Stage 4     : `hll_banked_mem`  (4-Bank x 64-Reg x 5-bit HLL DFF Array)
-//
-// SCL 180nm Pad-Count Summary (22 Signal Pins Total):
-//   - Clock & Reset  (2 pins) : clk, rst_n
-//   - Stream Inputs  (5 pins) : clear_sketch, clear_window, valid_in, base_in[1:0]
-//   - Host Readout  (13 pins) : read_addr[7:0], read_data[4:0]
-//   - Status Outputs (2 pins) : kmer_valid, write_en
-//   Total Signal I/O = 22 pins (prevents pad-limited die area in SCL 180nm).
+//   Top-level wrapper integrating nthash32_engine, lzd24, and hll_banked_mem
+//   with a 22-pin interface (clk, rst_n, 5-bit stream in, 13-bit readout, 2 status).
 // ============================================================================
 
 `timescale 1ns / 1ps

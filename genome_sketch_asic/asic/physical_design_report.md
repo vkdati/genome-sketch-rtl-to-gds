@@ -1,33 +1,33 @@
-# Phase C: RTL-to-GDSII Physical Implementation & Signoff Report
-**Project:** Multiplier-Free, SRAM-Less Streaming Genome Sketching ASIC (`genome_sketch_top`)  
-**Architecture:** Canonical `ntHash-32` ($k=16$) + 24-bit Leading-Zero Detector (`LZD-24`) + 4-Bank × 64 × 5-bit Write-Gated HyperLogLog Sketcher ($m=256$)  
-**Technology Node:** 180nm CMOS (`gf180mcuD` 9-Track Standard-Cell Library `gf180mcu_fd_sc_mcu9t5v0`, Constrained to SCL Mohali `tsl18fs120` 4-Metal `M1`–`M4` Stack)  
-**Design Status:** **TAPE-OUT READY (`PASS` — 0 DRC Violations, 0 Hold Violations, 0 Gate-Level Mismatches)**
+# Physical Implementation Report: Streaming Genome Sketching ASIC (180nm)
+
+**Module:** `genome_sketch_top`  
+**Architecture:** Canonical `ntHash-32` ($k=21$) + 24-bit Leading-Zero Detector (`LZD-24`) + 4-Bank × 64 × 5-bit Write-Gated HyperLogLog Sketcher ($m=256$)  
+**Technology:** 180nm CMOS (`gf180mcuD` 9T standard cells, constrained to 4-metal `Metal1`–`Metal4` stack)  
+**Authors:** K Nithin Rohit (`B23EE1030`), Vasu Kodati (`B23EE1079`)  
+**Advisor:** Dr. Bhupendra Singh Reniwal  
 
 ---
 
-## 1. Executive Summary & End-to-End PPA Signoff Scorecard
+## 1. Summary of Results
 
-Phase C completes the full digital ASIC physical implementation of [`genome_sketch_top`](../rtl/genome_sketch_top.v) from behavioral Verilog-2005 RTL to a verified 180nm GDSII layout ([`asic/gds/genome_sketch_top.gds`](gds/genome_sketch_top.gds)) using an automated, reproducible open-source EDA flow (`Yosys 0.33` + `OpenROAD` + `TritonCTS` + `TritonRoute` + `OpenRCX` + `OpenSTA` + `Icarus Verilog 13.0` + `KLayout 0.30.13` + `gdstk`).
+This report documents the physical implementation of [`genome_sketch_top`](../rtl/genome_sketch_top.v) from synthesizable Verilog-2005 RTL to a clean 180nm GDSII layout ([`asic/gds/genome_sketch_top.gds`](gds/genome_sketch_top.gds)).
 
-To guarantee drop-in compatibility with the proprietary **SCL Mohali 180nm (`tsl18fs120`, 4-Metal)** foundry process while executing on open-source PDK infrastructure, the physical implementation uses the **GlobalFoundries 180nm 9-track standard-cell library (`gf180mcu_fd_sc_mcu9t5v0`, $5.04\text{ }\mu\text{m}$ row height)** under a **strict 4-Metal (`Metal1`–`Metal4`) routing and PDN constraint (`Metal5 = 0` polygons)**.
+The implementation was performed using an automated open-source EDA flow (`Yosys`, `OpenROAD`, `TritonCTS`, `TritonRoute`, `OpenRCX`, `OpenSTA`, `Icarus Verilog`, `KLayout`, and `gdstk`). To match the target foundry constraints of SCL Mohali (`tsl18fs120`), the flow was constrained to standard-cell rows and a 4-metal interconnect stack (`Metal1`–`Metal4`, with `Metal5 = 0`).
 
-| Metric Category | Physical Design Metric | Measured Value (`gf180mcuD`) | SCL 180nm (`tsl18fs120`) Equivalent | Signoff Status |
-| :--- | :--- | :--- | :--- | :--- |
-| **Silicon Footprint** | Die Dimensions ($\text{W} \times \text{H}$) | $781.76\text{ }\mu\text{m} \times 781.76\text{ }\mu\text{m}$ | $\sim 780\text{ }\mu\text{m} \times 780\text{ }\mu\text{m}$ | **PASS** |
-| **Silicon Footprint** | Total Die Area / Core Area | $0.6111\text{ mm}^2$ / $0.5384\text{ mm}^2$ | $0.61\text{ mm}^2$ / $0.54\text{ mm}^2$ | **PASS** |
-| **Standard Cells** | Post-Synthesis Active Cells | $5,610\text{ cells}$ ($247,665.6\text{ }\mu\text{m}^2$) | $\sim 5,610\text{ cells}$ ($\sim 0.25\text{ mm}^2$) | **PASS** |
-| **Standard Cells** | Post-Route Active Cells (incl. CTS & Hold) | $6,853\text{ cells}$ ($403,558.0\text{ }\mu\text{m}^2$, $75\%$ util.) | $\sim 6,850\text{ cells}$ | **PASS** |
-| **Standard Cells** | Total Physical Instances (incl. Decap/Fill/Tap) | $18,531\text{ instances}$ ($100.0\%$ row fill) | $18,531\text{ instances}$ | **PASS** |
-| **Sequential Storage** | Total Flip-Flops (`dffrnq_1`) | $1,392\text{ DFFs}$ ($112\text{ ntHash} + 1,280\text{ HLL}$) | $1,392\text{ DFFs}$ ($0\text{ SRAMs}, 0\text{ latches}$) | **PASS** |
-| **Clock Tree (CTS)** | Clock Buffers (`clkbuf_16/4/2`) & Sinks | $172\text{ buffers}$ driving $1,392\text{ DFFs}$ (4 levels) | $172\text{ buffers}$ | **PASS** |
-| **4-Metal Routing** | Total Routed Wirelength & Vias | $646,966.0\text{ }\mu\text{m}$ ($646.97\text{ mm}$), $58,480\text{ vias}$ | $4\text{-Metal (`M1`–`M4`)}, \text{`M5`}=0$ | **PASS** |
-| **Timing Signoff** | Post-Route Hold Slack (WNS / TNS) | $+0.726\text{ ns}$ / $0.000\text{ ns}$ ($0\text{ violations}$) | **MET** across all corners | **PASS** |
-| **Timing Signoff** | Post-Route Max Clock Frequency ($F_{\max}$) | $64.05\text{ MHz}$ ($T_{\min}=15.614\text{ ns}$, $60\text{ \AA}$ oxide) | **$225.4\text{ MHz}$** ($T_{\min}=4.436\text{ ns}$, $30\text{ \AA}$ oxide) | **PASS** (`> 200 MHz`) |
-| **Genomic Throughput** | Streaming Base-Pair Throughput ($1\text{ bp/cyc}$) | $64.05\text{ Mbp/s}$ ($128.1\text{ Mbps}$) | **$225.4\text{ Mbp/s}$** ($450.8\text{ Mbps}$) | **PASS** |
-| **Power Signoff** | Post-Route Dynamic + Leakage @ $1.80\text{ V}$ | **$61.80\text{ mW}$** (SARS-CoV-2 VCD, $-24.1\%$ vs. ungated) | **$61.80\text{ mW}$** ($309.0\text{ pJ/bp}$) | **PASS** |
-| **Write-Gating Gain** | HLL Register Toggle Suppression | **$99.72\%$ cycles gated** ($2.40\text{ toggles}/29,903\text{ cyc}$) | **$-93.7\%$ sequential switching power** | **PASS** |
-| **Verification** | Post-Route Gate-Level Sim & Physical DRC | $31,968/31,968\text{ cycles PASS}$, **$0\text{ DRC errors}$** | $512/512\text{ HLL buckets exact}$ | **PASS** |
+| Parameter | Value (`gf180mcuD` 9T) | SCL 180nm (`tsl18fs120`) Estimate | Note |
+| :--- | :--- | :--- | :--- |
+| **Die Dimensions / Area** | $781.76\text{ }\mu\text{m} \times 781.76\text{ }\mu\text{m}$ ($0.611\text{ mm}^2$) | $\sim 780\text{ }\mu\text{m} \times 780\text{ }\mu\text{m}$ ($0.61\text{ mm}^2$) | Core margin: $24\text{ }\mu\text{m}$ for power ring |
+| **Core Area / Utilization** | $733.76\text{ }\mu\text{m} \times 733.76\text{ }\mu\text{m}$ ($0.538\text{ mm}^2$) | $\sim 0.54\text{ mm}^2$ | $145\text{ rows} \times 1,310\text{ sites}$, $75\%$ post-route utilization |
+| **Synthesized Logic Cells** | $5,610\text{ cells}$ ($247,665.6\text{ }\mu\text{m}^2$) | $\sim 5,610\text{ cells}$ | $4,218$ combinational, $1,392$ sequential |
+| **Total Physical Cells** | $18,531\text{ instances}$ | $18,531\text{ instances}$ | Includes $4,072$ decaps, $5,185$ fillers, $2,131$ taps, $290$ endcaps |
+| **Sequential Elements** | $1,392\text{ DFFs}$ | $1,392\text{ DFFs}$ | $112$ in ntHash-32, $1,280$ in HLL memory (0 SRAMs) |
+| **Clock Tree Buffers / Sinks** | $172\text{ buffers}$ driving $1,392\text{ sinks}$ | $172\text{ buffers}$ | 4-level balanced H-tree via TritonCTS |
+| **Routed Wirelength / Vias** | $646.97\text{ mm}$ / $58,480\text{ vias}$ | Same routing budget | $0\text{ DRC violations}$ on Metal1–Metal4 |
+| **Worst Hold Slack (WNS)** | $+0.726\text{ ns}$ | Positive margin | 0 hold violations across all corners |
+| **Max Clock Frequency** | $64.05\text{ MHz}$ ($T_{\min} = 15.61\text{ ns}$) | **$225.4\text{ MHz}$** ($T_{\min} = 4.44\text{ ns}$) | Scaled by thin-oxide ($30\text{ \AA}$) gate delay ratio |
+| **Throughput (1 bp/cycle)** | $64.05\text{ Mbp/s}$ | **$225.4\text{ Mbp/s}$** | Directly streams sequence input |
+| **Power (SARS-CoV-2 @ 1.8V)** | $61.80\text{ mW}$ ($309.0\text{ pJ/bp}$) | $\sim 62\text{ mW}$ | $24.1\%$ reduction vs. ungated baseline ($81.4\text{ mW}$) |
+| **Write-Gating Efficiency** | $99.72\%$ cycles gated | $99.72\%$ cycles gated | Average of $2.40$ flip-flop toggles over $29,903\text{ cycles}$ |
 
 ---
 
@@ -57,8 +57,8 @@ Logic synthesis was executed in `Yosys 0.33 + ABC` ([`asic/scripts/step2_synthes
 | **Total (Flat)** | [`genome_sketch_top.synth.v`](netlist/genome_sketch_top.synth.v) | **$5,610$** | **$1,392$** | **$4,218$** | **$247,665.60$** | **$100.00\%$** |
 
 - **Sequential vs. Combinational Split (Flattened Netlist):**
-  - **Sequential (`1,392` `dffrnq_1` flip-flops):** $102,148.30\text{ }\mu\text{m}^2$ ($41.24\%$ of total cell area). Exactly matches the architectural register budget:
-    $$\underbrace{64\text{b shift\_reg} + 32\text{b } h_{\text{fwd}} + 32\text{b } h_{\text{rc}} + 5\text{b cnt} + 1\text{b valid} - 22\text{b const opt.}}_{112\text{ DFFs in ntHash-32}} + \underbrace{4\text{ banks} \times 64\text{ buckets} \times 5\text{ bits}}_{1,280\text{ DFFs in HLL Memory}} = 1,392\text{ DFFs}$$
+  - **Sequential (`1,392` `dffrnq_1` flip-flops):** $102,148.30\text{ }\mu\text{m}^2$ ($41.24\%$ of total cell area), matching the RTL register budget:
+    $$\underbrace{42\text{b shift\_reg} + 5\text{b cnt} + 32\text{b } h_{\text{fwd}} + 32\text{b } h_{\text{rev}} + 1\text{b step\_active}}_{112\text{ DFFs in ntHash-32}} + \underbrace{4\text{ banks} \times 64\text{ buckets} \times 5\text{ bits}}_{1,280\text{ DFFs in HLL Memory}} = 1,392\text{ DFFs}$$
   - **Combinational (`4,218` logic gates):** $145,517.30\text{ }\mu\text{m}^2$ ($58.76\%$ of total cell area), dominated by the four 64:1 × 5-bit bank read multiplexers and 5-bit magnitude comparators (`OAI21`, `AOI22`, `NAND2`, `NOR2`, `XOR3`).
   - **Zero Macro Dependencies:** `0` latches, `0` DSP multipliers, `0` SRAM macros.
 
@@ -187,12 +187,12 @@ All high-resolution (300 DPI) layout visualizations are generated directly from 
 3. **TritonCTS 4-Level Balanced H-Tree Clock Topology ([`asic/figures/cts_clock_tree_map.png`](figures/cts_clock_tree_map.png)):**
    ![TritonCTS Clock Tree Topology](figures/cts_clock_tree_map.png)
 
-4. **Phase C PPA & Physical Signoff Summary Dashboard ([`asic/figures/ppa_and_metal_summary.png`](figures/ppa_and_metal_summary.png)):**
-   ![Phase C PPA & Physical Signoff Summary Dashboard](figures/ppa_and_metal_summary.png)
+4. **PPA & Metal Usage Summary Dashboard ([`asic/figures/ppa_and_metal_summary.png`](figures/ppa_and_metal_summary.png)):**
+   ![PPA & Physical Signoff Summary Dashboard](figures/ppa_and_metal_summary.png)
 
 ---
 
-## 4. Complete Directory of Phase C Deliverables & Reproducibility Commands
+## 4. Flow Scripts & Reproducibility
 
 | Step | Script | Key Generated Artifacts & Reports |
 | :---: | :--- | :--- |
@@ -204,9 +204,9 @@ All high-resolution (300 DPI) layout visualizations are generated directly from 
 | **Step 5** | [`asic/scripts/step5_sta_and_power.py`](scripts/step5_sta_and_power.py) | [`asic/spef/genome_sketch_top.nom.spef`](spef/genome_sketch_top.nom.spef), [`asic/reports/step5_postroute_power_1v8.rpt`](reports/step5_postroute_power_1v8.rpt), [`asic/reports/step5_summary.json`](reports/step5_summary.json) |
 | **Step 6** | [`asic/scripts/step6_gds_and_signoff.py`](scripts/step6_gds_and_signoff.py) | [`asic/gds/genome_sketch_top.gds`](gds/genome_sketch_top.gds), [`asic/def/step6_final.def`](def/step6_final.def), [`asic/netlist/genome_sketch_top.final.v`](netlist/genome_sketch_top.final.v), [`asic/reports/step6_gds_audit.rpt`](reports/step6_gds_audit.rpt) |
 
-### End-to-End One-Command Reproduction
+### Running the Full Flow
 ```bash
-cd "/media/nithin/Local Disk/BTP/genome_sketch_asic"
+cd genome_sketch_asic
 source asic/config/env_setup.sh
 
 python3 asic/scripts/step0_verify_env.py
@@ -218,8 +218,8 @@ python3 asic/scripts/step5_sta_and_power.py
 python3 asic/scripts/step6_gds_and_signoff.py
 ```
 
-### Switching to Proprietary SCL Mohali 180nm (`tsl18fs120`) on Lab Workstation
-When moving to the institute lab machine where the NDA-protected SCL 180nm PDK (`tsl18fs120`) is mounted (e.g., at `/opt/pdk/scl180`):
+### Switching to SCL Mohali 180nm (`tsl18fs120`) on the Lab Server
+Once the SCL 180nm PDK is accessible (e.g., at `/opt/pdk/scl180`):
 ```bash
 export PDK_TARGET=tsl18fs120
 export SCL_PDK_ROOT=/opt/pdk/scl180

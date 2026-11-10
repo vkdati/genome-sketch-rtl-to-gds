@@ -1,7 +1,7 @@
 # Golden Model Verification & Biological Benchmark Report
-**Architecture:** SCL 180nm Streaming Genome Sketching Engine (`ntHash-32` + $4\times 64\times 5\text{-bit}$ Banked HLL)  
+**Architecture:** Streaming Genome Sketching Engine (`ntHash-32`, $k=21$ + $4\times 64\times 5\text{-bit}$ Banked HLL)  
 **Generated:** 2026-10-22T04:26:37Z  
-**Verification Status:** **ALL HARDWARE & BIOLOGICAL CHECKS PASSED (100% BIT-ACCURATE)**
+**Status:** All unit tests and biological benchmarks passed.
 
 ---
 
